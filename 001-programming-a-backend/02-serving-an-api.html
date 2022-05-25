@@ -1,0 +1,790 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Serving an API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03-the-backends-backends.html" />
+    
+    
+    <link rel="prev" href="01-more-than-one-computer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01-more-than-one-computer.html">
+            
+                <a href="01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="02-serving-an-api.html">
+            
+                <a href="02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03-the-backends-backends.html">
+            
+                <a href="03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Serving an API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="serving-an-api">Serving an API</h1>
+<h2 id="services-are-served-by-servers-to-clients">Services are served by servers to clients</h2>
+<p>Computers talk to each other in all sorts of ways. For programming backends, we&apos;re not that interested in many of them; for example, we&apos;re not going to look into peer-to-peer communication models, such as BitTorrent or Bitcoin. (Although both are technically fascinating!)</p>
+<p>The communication model that is most used between frontends and backends, and between different parts of backends, is the <em>client-server model</em>.</p>
+<p>In the client-server model, there&apos;s some kind of <em>service</em> being, well, served. Then, there are two roles for participating computers:</p>
+<ul>
+<li>Computers that use the service, called <em>clients</em>.</li>
+<li>Those that serve the service, called <em>servers</em>.</li>
+</ul>
+<p>We&apos;ll explore the relationship between clients and servers in detail in this chapter.</p>
+<h3 id="protocols-the-language-in-which-computers-talk">Protocols: the language in which computers talk</h3>
+<p>Clients and servers must share a common understanding on <strong>how to communicate</strong>: a <em>protocol</em>.</p>
+<p>In practice, a protocol is really a <strong>composition of protocols</strong> from different layers. On low-level layers, computers agree on the basics about how to communicate. By using standard protocols for those layers, you can get advantage of existing tools that know about those protocols, such as routers, operating systems and web browser, and focus on what makes your use case different.</p>
+<p>There are protocols that:</p>
+<ul>
+<li>Work out the details of <strong>how to find a computer</strong> in the network: IP, DNS.</li>
+<li>Just <strong>move data</strong> between computers: TCP (reliable, but heavyweight), UDP (not reliable, but lightweight).</li>
+<li><strong>Encrypt</strong> the data, to avoid tampering and ensure privacy: TLS.</li>
+<li>Describe ways of <strong>shaping this data into messages</strong>, and how messages are <strong>sequenced</strong>: HTTP, JSON-RPC, gRPC, WebSockets.</li>
+</ul>
+<h2 id="ways-of-serving">Ways of serving</h2>
+<p>Different protocols implement different <strong>patterns of communication</strong> between clients and servers. Let&apos;s explore some of those.</p>
+<h3 id="requests-get-responses">Requests get responses</h3>
+<p>The most common way of serving services is by accepting messages from clients, called <em>requests</em>, that specify what they want the service to do for them; and, after some work is done, sending a message back to the client, called a <em>response</em>, with some kind of feedback about the request.</p>
+<div class="mermaid">
+sequenceDiagram
+  client -&gt;&gt;+ server: make me a sandwich
+  activate client
+  note right of server: *mumble* *rumble*
+  server -&gt;&gt;- client: &#x1F96A;
+  deactivate client
+</div>
+
+<p>This is, for instance, how HTTP works. Each time you visit a web page, you&apos;re being a client of a service; the browser sends a HTTP request to the servers, that respond with content.</p>
+<h3 id="dont-push-to-me-ill-pull-from-you">Don&apos;t push to me, I&apos;ll pull from you</h3>
+<p>When you go to the hospital, you don&apos;t just immediately go into the doctor&apos;s office, sit down and start telling them your pains and sorrows right away, without even minding if there&apos;s already some other patient in there. Instead, you wait in a room for the doctor to call you when they&apos;re ready to serve your request.</p>
+<p>This is <em>pull-based</em> serving, as opposed to <em>push-based</em>. It&apos;s mostly used when, rather than expecting a meaningful response from the server, the client provides the data to the server, without being really interested in a response from it.</p>
+<p>Here, the request is sent from the server to the client, and the client responds to it.</p>
+<div class="mermaid">
+sequenceDiagram
+  participant client
+  participant server
+  server -&gt;&gt; client: need your data
+  client -&gt;&gt; server: have all this data, enjoy
+</div>
+
+<p>The advantage of pulling data instead of waiting for it to be pushed is that the server decides when to pull it, which can be more efficient, since the server knows better than the client <em>when</em> it&apos;s preferable to have the data.</p>
+<h3 id="streams-of-responses">Streams of responses</h3>
+<p>Sometimes, instead of expecting a response to a request as soon as possible, clients expect a series of responses, being sent whenever they are ready. Think something like chat: as people post messages, they&apos;re delivered to you.</p>
+<div class="mermaid">
+sequenceDiagram
+  client -&gt;&gt;+ server: connect to chat
+  activate client
+  server -&gt;&gt; client: OK, hang on for messages
+
+  note right of server: (Some time passes.)
+
+  Alice -&gt;&gt;+ server: hi!
+  activate Alice
+  server -&gt;&gt;- Alice: OK
+  deactivate Alice
+
+  server -&gt;&gt; client: Alice says: hi!
+
+  note right of server: (Some time passes.)
+
+  Bob -&gt;&gt;+ server: I&apos;m here too!
+  activate Bob
+
+  Alice -&gt;&gt;+ server: how are you?
+  activate Alice
+
+  server -&gt;&gt;- Alice: OK
+  deactivate Alice
+
+  server -&gt;&gt; client: Alice says: how are you?
+
+  server -&gt;&gt;- Bob: OK
+  deactivate Bob
+
+  server -&gt;&gt; client: Bob says: I&apos;m here too!
+
+  deactivate client
+</div>
+
+<p>This is useful when the client wants to be <em>notified</em> when <em>events</em> happen <strong>as soon as possible after they happen</strong>.</p>
+<p>A downside is that both client and server need to <strong>keep the stream open</strong>, which, as we&apos;ll extensively see, consumes system resources.</p>
+<p>Web protocols that enable streams: SSE, WebSocket.</p>
+<h4 id="long-polling">Long polling</h4>
+<p>You can trick a request-response protocol into behaving like a stream. The trick is to send a request and, instead of expecting a response right away, let the server respond only once a new event arrives. Once you get the response, you send the request again.</p>
+<div class="mermaid">
+sequenceDiagram
+  client -&gt;&gt;+ server: get me messages
+  activate client
+
+  note right of server: (Some time passes.)
+
+  Alice -&gt;&gt;+ server: hi!
+  activate Alice
+  server -&gt;&gt;- Alice: OK
+  deactivate Alice
+
+  server -&gt;&gt;- client: Alice says: hi!
+  deactivate client
+  client -&gt;&gt;+ server: get me messages
+  activate client
+
+  note right of server: (Some time passes.)
+
+  Bob -&gt;&gt;+ server: I&apos;m here too!
+  activate Bob
+
+  Alice -&gt;&gt;+ server: how are you?
+  activate Alice
+
+  server -&gt;&gt;- Alice: OK
+  deactivate Alice
+
+  server -&gt;&gt;- client: Alice says: how are you?
+  deactivate client
+
+  server -&gt;&gt;- Bob: OK
+  deactivate Bob
+
+  client -&gt;&gt;+ server: get me messages
+  activate client
+  server -&gt;&gt;- client: Bob says: I&apos;m here too!
+
+  deactivate client
+</div>
+
+<p>The main advantage of this is that you can use a request-response protocol, such as HTTP, which are more ubiquitous and thus are familiar to more clients developers and have more libraries available for all kinds of platforms.</p>
+<h3 id="stream-from-a-to-b--stream-from-b-to-a--connection">Stream from A to B + stream from B to A = connection</h3>
+<p>If, instead of from server to client only, messages are streamed in both directions, we have a <em>connection</em>.</p>
+<p>Going back to the chat application, we had:</p>
+<ul>
+<li>A stream-based protocol for retrieving messages.</li>
+<li>A request-response protocol for posting messages.</li>
+</ul>
+<p>It&apos;s more efficient to just have a single connection for both. This has basically no resources overhead over plain streams, and spares us the overhead of the request-response protocol.</p>
+<p>A connection-based protocol available in Web browsers is WebSockets.</p>
+<h2 id="application-programing-interface">Application Programing Interface</h2>
+<p>Once you&apos;ve decided how your server will communicate with its clients, you must choose a stack of standard protocols that best match your needs, and, on top of those, add a protocol that <em>you</em> define. The protocol that is <strong>specific to an application</strong> is usually called the <strong>API</strong>.</p>
+<p>The API is the <strong>external interface</strong> that a system exposes to let others <strong>build programs on top</strong> of it.</p>
+<p>It is <strong>different from a user interface</strong>, which is supposed to be used by a person directly through human-friendly input and output methods: buttons, commands, text, images, etc.</p>
+<p>Instead, an API is supposed to be used programmatically, <strong>by writing code</strong>.</p>
+<p>In the case of servers, APIs are exposed to clients through the network, on top of other protocols that deal with communication details.</p>
+<p>Even though APIs are for machines to call, it&apos;s people the ones writing the code that deals with them. <strong>Bad APIs make people miserable and systems brittle.</strong> While what constitutes a good API is, as with most aspects of human interaction, fairly subjective, there are a few principles that are a necessary factor in designing good APIs.</p>
+<h3 id="an-api-is-a-contract">An API is a contract</h3>
+<p>The first and most crucial requirement for a good API is that it is <em>well defined</em>.</p>
+<h3 id="apis-get-old">APIs get old</h3>
+<p>Here&apos;s a fact of life: you will want to change your API. Here&apos;s another: you won&apos;t be able to, because there will be clients depending on it.</p>
+<p>The code your clients are using to access your old API won&apos;t magically change at exactly the same time your server stop serving it. Mobile apps won&apos;t get updated, browser tabs won&apos;t refresh, services depending on yours won&apos;t be deployed until after some time passes, or, in the worst case, never.</p>
+<h4 id="backwards-compatible-additions">Backwards-compatible additions</h4>
+<p>Instead of changing your API, consider adding things to it.</p>
+<p>State very clearly which kind of additions are considered backwards-compatible. A good list would include:</p>
+<ul>
+<li>Adding kinds of requests: methods, endpoints, resources, etc.</li>
+<li>Adding fields to object types.</li>
+<li>Adding parameters to kinds of requests, if the protocol allows it: query parameters in URLs, optional arguments in methods, etc.</li>
+</ul>
+<h4 id="versioning">Versioning</h4>
+<p>When breaking changes can&apos;t be avoided, it&apos;s best to keep running the old API alongside the new one.</p>
+<p>Clients should be told that the should update to take advantage of the new, better API.</p>
+<h3 id="programmer-friendliness">Programmer-friendliness</h3>
+<p>In the end, a programmer is the one that needs to understand and adapt to your API. A good API is designed with this in mind.</p>
+<p>Being friendly to people is more art than science. It entails things like being simple, powerful, easy to use, flexible, etc. But let&apos;s see a few recommendations that are usually programmer-friendly APIs.</p>
+<h4 id="follow-conventions">Follow conventions</h4>
+<p>Yours is not the only API programmers have seen or will see in their lives. If your API resembles those they already knew, you can leverage that familiarity in order to reduce friction.</p>
+<p>There will probably be libraries, tools, etc. built around those conventions.</p>
+<h4 id="give-good-error-feedback">Give good error feedback</h4>
+<p>Use precisely codified errors and informative error messages in your responses to faulty requests.</p>
+<h4 id="keep-ceremony-to-a-minimum">Keep ceremony to a minimum</h4>
+<p>Set sane defaults when they make sense. But careful: this is a slippery slope. You might end up doing things by default that are annoying or surprising to many people.</p>
+<h4 id="provide-client-libraries">Provide client libraries</h4>
+<p>Specially when your API is complex, providing a client library may be a good idea.</p>
+<p>A client library should not be substitute for a good platform-agnostic API: platforms change, and you might end up inducing more friction.</p>
+<h2 id="tcp-connections-and-your-api">TCP connections and your API</h2>
+<p>Ideally, when serving your API, you wouldn&apos;t need to care too much about the underlying protocols. Things would just work beneath you.</p>
+<p>In practice, when things go wrong, those foundational protocols break and your API is affected. If you want your API to be well-defined, you can&apos;t escape from that fact. Effectively, the underlying protocols are part of your API.</p>
+<p>In particular, TCP is such a fundamental protocol that is is worth knowing in some detail how it affects your API.</p>
+<h3 id="delivery-guarantees">Delivery guarantees</h3>
+<p>As long as the connection is not broken, TCP ensures that the data you send is received:</p>
+<ul>
+<li>Eventually</li>
+<li>Only once</li>
+<li>In the order it was sent</li>
+<li>Incorrupt</li>
+</ul>
+<h3 id="server-cancel-work-when-the-connection-dies">Server: cancel work when the connection dies</h3>
+<p>There are three ways a connection should be declared dead:</p>
+<ul>
+<li>You receive a FIN when you expected the other end to keep sending data. In Node.js, this manifests itself as an <code>end</code> event emitted on the <code>net.Socket</code> or a <code>http.Client</code> object.</li>
+<li>You receive a RST. This means the other end has declared the connection as broken and tells you to do so too, for whatever reason. This is the &quot;connection reset by peer&quot; error that manifests itself as an <code>error</code> event emitted on the request object.</li>
+<li>The connection times out.</li>
+</ul>
+<p>You should listen to those events, propagate them, and stop doing things in your request handler as soon as possible.</p>
+<h3 id="client-close-the-connection-if-you-dont-need-a-response-anymore">Client: close the connection if you don&apos;t need a response anymore</h3>
+<p>In the browser&apos;s <code>XMLHTTPRequest</code>, call the <code>abort</code> method.</p>
+<p>In Node.js&apos;s <code>http.ClientRequest</code>, call the <code>destroy</code> method.</p>
+<h2 id="rpc">RPC</h2>
+<p>RPC means Remote Procedure Call.</p>
+<p>It basically means that you send a request and get a response, similarly to how you would call a procedure (a method or a function) and get a return value in your programming language.</p>
+<h3 id="http-as-a-transport">HTTP as a transport</h3>
+<p>HTTP is a protocol on top of TCP designed to interact with hypertext, that is, Web pages. But, since there&apos;s a lot of tooling already in place for HTTP, it&apos;s usual to rely on it as a transport layer for RPC.</p>
+<h4 id="json-rpc">JSON-RPC</h4>
+<p>JSON-RPC is a particular way of encoding RPC calls in HTTP, using JSON.</p>
+<p>The nice thing about JSON-RPC is that there are tons of libraries available for it, in many platforms.</p>
+<h2 id="rest">REST</h2>
+<p>In REST, you define your API in terms of resources. A resource is something that can be retrieved, maybe modified, and maybe deleted.</p>
+<p>CRUD operations:</p>
+<ul>
+<li>GET<ul>
+<li>Reads a resource.</li>
+<li>Cacheable.</li>
+<li>Must be idempotent.</li>
+</ul>
+</li>
+<li>POST<ul>
+<li>Writes a resource, or provoke an effect of some kind.</li>
+<li>Not necessarily idempotent.<ul>
+<li>But you need to make it idempotent if you want strong delivery guarantees, to safely support retries.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>PUT<ul>
+<li>Writes a resource by replacing it wholly.</li>
+<li>Must be idempotent.</li>
+</ul>
+</li>
+<li>DELETE<ul>
+<li>Deletes a resource.</li>
+<li>Must be idempotent.</li>
+</ul>
+</li>
+<li>PATCH<ul>
+<li>Replaces just part of a resource. Pretty error-prone; usually not worth it.</li>
+</ul>
+</li>
+</ul>
+<p>This is how browsers work, mostly.</p>
+<p>Virtually all platforms have good support for RESTful APIs.</p>
+<p>Provides familiar semantics. Or that&apos;s the myth. In practice, it&apos;s not that well understood, and you&apos;ll find yourself shoehorning things into it, since not everything can be expressed in terms of resources.</p>
+<p>Because of this, just declaring your API as &quot;RESTful&quot; doesn&apos;t mean there&apos;s no need to define your API in very precise terms.</p>
+<p>REST also requires you to respond with semantically valid status codes:</p>
+<ul>
+<li>200-299: Things went well.</li>
+<li>400-499: Something went bad, because of the client.</li>
+<li>500-599: Something went bad, because of the server.</li>
+</ul>
+<p>You can get fancy, or you can stick to:</p>
+<ul>
+<li>200 OK</li>
+<li>400 Bad Request</li>
+<li>401 Unauthorized</li>
+<li>403 Forbidden</li>
+<li>404 Not Found</li>
+<li>500 Internal Server Error</li>
+<li>503 Service Unavailable</li>
+</ul>
+<h2 id="deriving-code-from-contracts">Deriving code from contracts</h2>
+<p>Many tools let you derive both client and server code from a common language that specifies part of your contract. This is nice because it enforces that part of the contract in a uniform, robust way, so that you can focus on the other parts.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-more-than-one-computer.html" class="navigation navigation-prev " aria-label="Previous page: More than one computer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03-the-backends-backends.html" class="navigation navigation-next " aria-label="Next page: The backend's backends">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Serving an API","level":"1.2.2","depth":2,"next":{"title":"The backend's backends","level":"1.2.3","depth":2,"path":"001-programming-a-backend/03-the-backends-backends.md","ref":"001-programming-a-backend/03-the-backends-backends.md","articles":[]},"previous":{"title":"More than one computer","level":"1.2.1","depth":2,"path":"001-programming-a-backend/01-more-than-one-computer.md","ref":"001-programming-a-backend/01-more-than-one-computer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"001-programming-a-backend/02-serving-an-api.md","mtime":"2022-04-29T07:27:32.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

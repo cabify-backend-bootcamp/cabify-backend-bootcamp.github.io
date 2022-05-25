@@ -1,0 +1,725 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Contradictions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-persistent-state.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="01-contradictions.html">
+            
+                <a href="01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02-persistent-state.html">
+            
+                <a href="02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03-doing-things-later.html">
+            
+                <a href="03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04-operation-oriented-databases.html">
+            
+                <a href="04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Contradictions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="contradictions">Contradictions</h1>
+<h2 id="frontends-outnumber-the-backend">Frontends outnumber the backend</h2>
+<p>So far, we&apos;ve studied the conversations between a frontend and a backend, that is, <em>a</em> computer running a frontend program and <em>a</em> computer running a backend program, including the derived conversations between this backend and other backend servers (databases, mailers, etc.).</p>
+<div class="mermaid">
+graph LR
+  frontend --- backend
+  backend --- database
+  backend --- cache
+  backend --- mailer
+  backend --- ...
+</div>
+
+<p>But, of course, we know that&apos;s usually not all participants in our little distributed system. It actually looks like this:</p>
+<div class="mermaid">
+graph LR
+  frontend1[&quot;frontend&quot;] --- backend
+  frontend2[&quot;frontend&quot;] --- backend
+  frontend3[&quot;frontend&quot;] --- backend
+  frontend4[&quot;frontend&quot;] --- backend
+  frontend5[&quot;frontend&quot;] --- backend
+  frontend6[&quot;frontend&quot;] --- backend
+  frontend7[&quot;frontend&quot;] --- backend
+  frontend8[&quot;... more frontends ...&quot;] --- backend
+  backend --- database
+  backend --- cache
+  backend --- mailer
+  backend --- ...
+</div>
+
+<p>Unless we have a single user, we have <strong>many frontend computers</strong> talking with our backend <strong>at the same time</strong>.</p>
+<h3 id="side-note-beware-of-your-development-setup-bias">Side note: beware of your development setup bias</h3>
+<p>Actually, there&apos;s a scenario in which you&apos;ll usually have a single frontend talking to your backend at any given time: when <strong>developing</strong>. You&apos;ll typically open your browser, go to <code>localhost:something</code>, and see if whatever you&apos;re building works.</p>
+<p>This is a huge source of bias. You should be aware at all times that your local system reflects only very poorly your real production system. Some ways in which your local environment is different:</p>
+<ul>
+<li>You will rarely experience contradictions.</li>
+<li>The local network is <em>very</em> fast and reliable. (In particular, if you&apos;re targeting mobile users, I&apos;d say you <em>must</em> use a network limiter.)</li>
+<li>It runs in a laptop instead of a server, or a series of servers. Hardware is different.</li>
+<li>It probably isn&apos;t as virtualized as the server.</li>
+<li>The server sustains way more load.</li>
+<li>The server is probably running other programs that may steal resources from your backend.</li>
+</ul>
+<h3 id="frontends-share-memory">Frontends share memory</h3>
+<p>If every communication between a frontend and a backend were completely isolated from the others, then this wouldn&apos;t be a problem at all. But, usually, there is some <em>shared memory</em> in place: a database, a cache.</p>
+<p>This opens up the possibility of <strong>contradictions</strong>. A participant may assume that the shared memory has something in it, but in reality it has something else.</p>
+<h2 id="sequential-concurrent-distributed">Sequential, concurrent, distributed</h2>
+<p>Actually, this chapter isn&apos;t really about distributed systems. As we&apos;ve seen, distributed systems are all about <em>communication through an unreliable network</em>. But, even if communication happened through a completely reliable network with guaranteed bounded delay, we would still have several participants sharing memory, and thus the possibility of contradictions.</p>
+<p>Everything in this chapter actually applies to <em>concurrent systems</em>, of which distributed systems are a subset.</p>
+<h3 id="sequential-system">Sequential system</h3>
+<p><img src="01-contradictions-sequential-system.png" alt="Diagram of the sequential system"></p>
+<p>A <strong>sequential system</strong>, or just <strong>process</strong>, is the basic building block of computing: some instructions run one after another, reading and storing bits in a piece of memory that nobody else uses, in a completely reliable way. A read or a write to that memory effectively stops the world.</p>
+<h3 id="concurrent-system">Concurrent system</h3>
+<p>If we take several processes running at the same time and give them access to the same piece of memory, we get a <strong>concurrent system</strong>. This piece of memory is also accessed in a completely reliable way.</p>
+<p><img src="01-contradictions-concurrent-system.png" alt="Diagram of the concurrent system. The shared memory is connected with all elements"></p>
+<p>Note that, by leaving each other &quot;messages&quot; in the shared memory, concurrent processes may <strong>communicate</strong>. In fact, this capacity of reliable communication between processes is the really fundamental thing about concurrent systems. In practice, concurrent processes communicate through shared memory, but on some programming models this shared memory is abstracted away.</p>
+<h3 id="distributed-system">Distributed system</h3>
+<p>When we make several processes running at the same time communicate through an unreliable medium, we get a <strong>distributed system</strong>.</p>
+<p><img src="01-contradictions-distributed-system.png" alt="Diagram of the distributed system"></p>
+<p>Distributed systems <strong>are inherently concurrent</strong>, since we find in them sequential processes communicating with each other. But we may find concurrent systems that are <em>not</em> distributed.</p>
+<h2 id="related-events">Related events</h2>
+<p>When processes run, they produce <em>events</em>, things that happen: this piece of memory gets read, this gets written, this page gets printed, etc. Computing is nothing but a <strong>succession</strong> of such <strong>events</strong>.</p>
+<p>When considering a sequential process, all events have an intrinsic, implicit <strong>relationship</strong> between them: each event either <strong>happens before</strong> or <strong>after</strong> another event.</p>
+<p>Events <em>can</em> have an additional relationship: one event may <strong>depend on</strong> another. If event A wouldn&apos;t have happened if event B wouldn&apos;t have happened before A, we say that B causes A, or that A <strong>depends on</strong> B. We call this a <strong>causal relationship</strong>.</p>
+<p>If two events aren&apos;t causally related, then it doesn&apos;t matter in which order they are run: the end state of the process&apos;s memory afterwards will be exactly the same.</p>
+<p>Consider the following assignments in a sequential system:</p>
+<pre><code class="lang-js">foo = <span class="hljs-number">42</span>
+bar = qux * <span class="hljs-number">2</span>
+</code></pre>
+<p>The end result of those is exactly the same as:</p>
+<pre><code class="lang-js">bar = qux * <span class="hljs-number">2</span>
+foo = <span class="hljs-number">42</span>
+</code></pre>
+<p>Now, consider something like this:</p>
+<pre><code class="lang-js">foo = <span class="hljs-number">42</span>
+bar = foo * <span class="hljs-number">2</span>
+</code></pre>
+<p>Now we can&apos;t just swap the two assignments, since the effects of the second assignment <em>depends on</em> the assignment of <code>foo</code> <em>happening before</em>.</p>
+<p>When we introduce concurrent processes into the equation, we open up the possibility of two events not being bound by a happens-before relationship. By running them in different concurrent processes, neither happens before the other.</p>
+<blockquote>
+<p>If two events aren&apos;t causally related, then A and B may happen in any order, including at the same time.</p>
+</blockquote>
+<p>But causally related event <em>must</em> be also related in time.</p>
+<blockquote>
+<p>If event A depends on event B, then B must happen before event A.</p>
+</blockquote>
+<p>So, if event A depends on event B, must A and B happen in the same sequential process? Not necessarily.</p>
+<blockquote>
+<p>Given that event A depends on event B, A and B can happen in two different concurrent processes if the process that runs A communicates A to the process that runs B.</p>
+</blockquote>
+<p>When two concurrent processes communicate in a controlled manner, establishing a happens-before relationship between the events one <em>has</em> produced and the other <em>will</em> produce, then we say they <strong>synchronize</strong>.</p>
+<h2 id="concurrent-systems-in-the-wild">Concurrent systems in the wild</h2>
+<h3 id="time-sharing-processes">Time-sharing processes</h3>
+<p>Your computer is, at any time, running a bunch of programs at the same time. Each instance of a running program is called a <em>process</em>.</p>
+<p>Each process has its own <em>address space</em>, a chunk of memory that only that process can access.</p>
+<p>The operating system is in charge of making a process execute by letting it run in a CPU for a while, then hitting pause on it, letting another process run in its place, pausing that one, and so on. It does so for all available CPU cores in the machine. By doing this fast enough, if effectively looks like <em>all</em> processes are executing at the same time, as <em>concurrent</em> processes. This is called <strong>scheduling</strong>.</p>
+<p>The OS provides tools to achieve <strong>inter-process communication (IPC)</strong>. Some of them are:</p>
+<ul>
+<li>Files and pipes.</li>
+<li>Shared memory (<code>shm</code>).</li>
+<li>Network sockets, either in a real network, in localhost (a &quot;virtual&quot; network), or as domain sockets.</li>
+<li>Signals.</li>
+</ul>
+<h3 id="threads">Threads</h3>
+<p>Actually, the OS doesn&apos;t schedule processes, but <em>threads</em>. A process has at least one thread (called the <em>main</em> thread), but it may spawn more of those.</p>
+<p>Each thread has its own <em>stack</em>, but they all <strong>share address space</strong>, so they can do things like reading and writing to the same variables.</p>
+<p>A thread can communicate with another thread by <strong>writing in a shared variable</strong> that the other thread <strong>then reads</strong>.</p>
+<p>Writing or reading a variable is usually <strong>not an atomic operation</strong>. In the middle of writing or reading, the thread might be paused by the operating system. If then another thread reads it, it may see a half-written variable, or, by writing on it, cause the original thread to see so when it comes back. This can happen too if two threads are running in different CPUs and happen to access the variable at the same time.</p>
+<p>To fix this, the system provides <strong>atomic synchronization mechanisms</strong> such as mutexes, semaphores, and condition variables.</p>
+<h3 id="event-loop">Event loop</h3>
+<p>This is the JavaScript model: there&apos;s a single thread, but, when encountering a <em>blocking</em> operation (a network operation, an access to disk, a wait), instead of waiting for it to finish, a <em>callback</em> is registered.</p>
+<p>This callback will be <em>enqueued for being called</em> when the blocking operation for which it was registered finishes, producing an <em>event</em>.</p>
+<p>The running thread eventually finishes the current call stack, ideally pretty quickly since it doesn&apos;t wait for anything blocking to finish. When it does, then the <em>event loop</em> takes over control of the the thread. It looks in the queue of callbacks that want to be called, pops one of them, and calls it. The process just repeats until the process dies.</p>
+<p>When you <strong>don&apos;t know in which order two callbacks will be called</strong> by the event loop, they are for all intents and purposes <strong>concurrent</strong>.</p>
+<p>Two concurrent callbacks can communicate by <strong>closing over the same variable</strong> and accessing it from both.</p>
+<p>Since there&apos;s a single thread, accessing a variable <strong>is atomic</strong>. This makes things easier, but bugs based on assuming that variables don&apos;t change in between callbacks can still happen, since they can break causality.</p>
+<h3 id="green-threads">Green threads</h3>
+<p>This is kind of a hybrid between threads and an event loop. As far as concurrency is concerned, though, they are basically equivalent to threads, except that, depending on the exact model, accessing variables without other synchronization mechanisms in place may or may not be atomic.</p>
+<h2 id="race-conditions">Race conditions</h2>
+<p>A <em>race condition</em> is a type of bug in which we fail to codify the causality of two events properly. We wanted event A to depend on event B, but instead it ends up depending on some other event.</p>
+<p>Race conditions are hard because our programming languages are inherently <em>sequential</em>. We tend to codify causal dependencies as just happen-before relationships; that is, if we want A to depend on B, our programming languages lead us to believe that we just have to do B after A. This doesn&apos;t take into account events that may have taken place in between B and A happen in our process, which could break relationship.</p>
+<p>Think about this pair of concurrent processes:</p>
+<p><strong>Process 1</strong></p>
+<pre><code class="lang-js">foo = <span class="hljs-number">42</span>; <span class="hljs-comment">// A</span>
+bar = foo * <span class="hljs-number">2</span>; <span class="hljs-comment">// B</span>
+</code></pre>
+<p><strong>Process 2</strong></p>
+<pre><code class="lang-js">foo = <span class="hljs-number">1337</span>; <span class="hljs-comment">// C</span>
+</code></pre>
+<p>If <code>foo</code> is a shared variable of some kind, and you intended event B to depend on event A, then this code has, at least, one race condition, because B might be depending on C instead.</p>
+<h2 id="synchronization-mechanisms">Synchronization mechanisms</h2>
+<p>To avoid race conditions, we need to <strong>synchronize</strong> concurrent processes so that the intended causality relationships are enforced. Let&apos;s examine a few ways of synchronizing.</p>
+<h3 id="atomic-operations">Atomic operations</h3>
+<p>An operation is <em>atomic</em> when no concurrent event can affect it.</p>
+<h4 id="locks">Locks</h4>
+<p>Locks, also called mutexes (from <em>mutual exclusion</em>), are probably the most ubiquitous synchronization mechanism. All others can be implemented with it.</p>
+<p>A lock is a shared object that concurrent threads acquire and then release, with the invariant that <strong>only one process may have the lock at the same time</strong>.</p>
+<p>Our example above could be fixed by doing this:</p>
+<p><strong>Process 1</strong></p>
+<pre><code class="lang-js">lock(); <span class="hljs-comment">// L1</span>
+foo = <span class="hljs-number">42</span>; <span class="hljs-comment">// A</span>
+bar = foo * <span class="hljs-number">2</span>; <span class="hljs-comment">// B</span>
+unlock(); <span class="hljs-comment">// U1</span>
+</code></pre>
+<p><strong>Process 2</strong></p>
+<pre><code class="lang-js">lock(); <span class="hljs-comment">// L2</span>
+foo = <span class="hljs-number">1337</span>; <span class="hljs-comment">// C</span>
+unlock(); <span class="hljs-comment">// U2</span>
+</code></pre>
+<p>This ensures that B actually depends on A. The key is that there&apos;s an enforced happens-before relationship between the whole group of events L1+A+B+U1 and L2+C+U2. We don&apos;t know the order in which the two groups will happen, but we know that events from one process won&apos;t happen before events from the other have happened.</p>
+<p>Locks are tricky to get right: you can fall into <strong>deadlocks</strong> if by accidentally making a process that has the lock depend on itself to release the lock to continue.</p>
+<h4 id="atomic-load-and-write&#xA1;">Atomic load and write&#xA1;</h4>
+<p>In JavaScript, reading and writing to variables is atomic. In databases, load and writing a single <em>object</em> is also typically atomic. In other runtimes that preempt threads or allows concurrent reads and writes, additional ceremony is necessary.</p>
+<h4 id="increment-and-decrement">Increment and decrement</h4>
+<p>Again, since in JavaScript you know that everything that happens within a function call is atomic, doing this:</p>
+<pre><code class="lang-js">a = a + <span class="hljs-number">1</span>;
+</code></pre>
+<p>is atomic. But in other runtimes, including most databases, a concurrent process may assign some value Y for <code>a</code> in between <code>a</code> is read with some value X and then assigned to X + 1. Then, value Y will be lost.</p>
+<h4 id="compare-and-swap">Compare-and-swap</h4>
+<p>Atomically execute something like:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compareAndSwap</span>(<span class="hljs-params">newValue, expectedCurrent</span>) </span>{
+  <span class="hljs-keyword">let</span> current = a;
+  <span class="hljs-keyword">if</span> (current == expectedCurrent) {
+    a = newValue;
+  }
+  <span class="hljs-keyword">return</span> current;
+}
+</code></pre>
+<p>This is a powerful primitive that lets us check that our assumption about the current value of the shared variable is still what we thought it is, probably from a previous read, before setting it to a new value. This prevents losing writes.</p>
+<p>A particularly useful way of using this is &quot;set if unset and return current value&quot;. This lets concurrent process agree on <em>some</em> value, it doesn&apos;t matter which.</p>
+<p>A variant, <em>compare-and-set</em>, doesn&apos;t return the current value, but just whether our assumption was true:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compareAndSet</span>(<span class="hljs-params">newValue, expectedCurrent</span>) </span>{
+  <span class="hljs-keyword">let</span> current = a;
+  <span class="hljs-keyword">if</span> (current == expectedCurrent) {
+    a = newValue;
+  }
+  <span class="hljs-keyword">return</span> current == expectedCurrent;
+}
+</code></pre>
+<p>MongoDB&apos;s <code>findAndModify</code> implements a compare-and-set operation.</p>
+<h3 id="optimistic-locking">Optimistic locking</h3>
+<h3 id="transactions">Transactions</h3>
+<h4 id="isolation-levels">Isolation levels</h4>
+<h2 id="distributed-synchronization">Distributed synchronization</h2>
+<h3 id="distributed-locks">Distributed locks</h3>
+<h3 id="distributed-transactions">Distributed transactions</h3>
+<h3 id="two-phase-commit">Two-phase commit</h3>
+<h2 id="handling-concurrent-requests">Handling concurrent requests</h2>
+<h3 id="the-single-threaded-model">The single-threaded model</h3>
+<p>As championed by Redis. Just run every request sequentially. Be fast. Trivially serializable.</p>
+<h3 id="the-event-loop-model">The event loop model</h3>
+<p>Use a single thread, but make the reaction to a blocking operation happen latter, letting other requests sneak in in the meantime.</p>
+<h3 id="the-green-threaded-model">The (green?) threaded model</h3>
+<p>Each request is handled by a separate thread or even a process. There might be a thread pool, or one thread per concurrent process.</p>
+<h2 id="race-detection">Race detection</h2>
+<h3 id="deterministic-merges">Deterministic merges</h3>
+<h3 id="writes-declare-read-dependencies">Writes declare read dependencies</h3>
+<!--
+Example: Buy a pen, add a laptop to cart during checkout, get a free laptop
+-->
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Distributed data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-persistent-state.html" class="navigation navigation-next " aria-label="Next page: Persistent state">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Contradictions","level":"1.3.1","depth":2,"next":{"title":"Persistent state","level":"1.3.2","depth":2,"path":"002-distributed-data/02-persistent-state.md","ref":"002-distributed-data/02-persistent-state.md","articles":[]},"previous":{"title":"Distributed data","level":"1.3","depth":1,"path":"002-distributed-data/README.md","ref":"002-distributed-data/README.md","articles":[{"title":"Contradictions","level":"1.3.1","depth":2,"path":"002-distributed-data/01-contradictions.md","ref":"002-distributed-data/01-contradictions.md","articles":[]},{"title":"Persistent state","level":"1.3.2","depth":2,"path":"002-distributed-data/02-persistent-state.md","ref":"002-distributed-data/02-persistent-state.md","articles":[]},{"title":"Doing things later","level":"1.3.3","depth":2,"path":"002-distributed-data/03-doing-things-later.md","ref":"002-distributed-data/03-doing-things-later.md","articles":[]},{"title":"Operation-oriented databases","level":"1.3.4","depth":2,"path":"002-distributed-data/04-operation-oriented-databases.md","ref":"002-distributed-data/04-operation-oriented-databases.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"002-distributed-data/01-contradictions.md","mtime":"2022-04-29T07:27:32.082Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,676 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>General Good Practices · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-design-practices.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="01-general-practices.html">
+            
+                <a href="01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="02-design-practices.html">
+            
+                <a href="02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="99-polymorphism-and-abstract-types.html">
+            
+                <a href="99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >General Good Practices</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="general-good-practices">General Good Practices</h1>
+<p>In medicine, there are some good practices followed by doctors to heal their patients. Some of them are specific to the discipline. For example, in surgery they use to apply anaesthesia and monitor the patient. There are some other good practices that are non-specific to any discipline. Washing the doctor hands or work in a clean environment are some examples.</p>
+<p>In software, there are also some general good practices that can be applied to the art of programming. We will discuss some of them along this section.</p>
+<h2 id="dont-repeat-yourself-dry">Don&apos;t Repeat Yourself (DRY)</h2>
+<p>Writing the same piece of code in several places is not a good idea. Let&apos;s see an example:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthService</span> </span>{
+  login(username, password) {
+    <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">this</span>.db.select(<span class="hljs-string">&quot;*&quot;</span>).from(<span class="hljs-string">&quot;users&quot;</span>).where(<span class="hljs-string">&quot;username == &quot;</span> + username);
+    <span class="hljs-keyword">let</span> rows = <span class="hljs-keyword">this</span>.db.exec(query);
+    <span class="hljs-keyword">if</span> (rows.count == <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;user not exists&quot;</span>;
+    }
+    <span class="hljs-comment">// Do the login</span>
+  }
+
+  changePassword(username, newPassword, oldPassword) {
+    <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">this</span>.db.select(<span class="hljs-string">&quot;*&quot;</span>).from(<span class="hljs-string">&quot;users&quot;</span>).where(<span class="hljs-string">&quot;username == &quot;</span> + username);
+    <span class="hljs-keyword">let</span> rows = <span class="hljs-keyword">this</span>.db.exec(query);
+    <span class="hljs-keyword">if</span> (rows.count == <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;user not exists&quot;</span>;
+    }
+    <span class="hljs-comment">// Do the password change</span>
+  }
+}
+</code></pre>
+<p>As we can see, our <code>AuthService</code> class can be used to login users or to change their passwords. But we want to check whether the user exists before proceeding. So we include a pre-condition check in both methods.</p>
+<p>There are seveeral reasons that makes this particularly not recommended.</p>
+<ul>
+<li>We are making the same work twice. In the best case, we are copying and pasting the lines. But that&apos;s also an extra work to be considered.</li>
+<li>The code is more difficult to read. More lines, and particularly repeated, reduces the focus on the really important things.</li>
+<li>This is a source of errors. It&apos;s fragile. Let&apos;s note that we might need to change how the user existence is checked in the code. So we should do it in both methods. We run the risk of changing the code in one place only, leaving the other one as it was. This is a really subtle bug that could be unnoticed for a long time.</li>
+</ul>
+<p>So refactoring the code as follows is recommended.</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthService</span> </span>{
+  login(username, password) {
+    <span class="hljs-keyword">this</span>.checkUserExists(username);
+    <span class="hljs-comment">// Do the login</span>
+  }
+
+  changePassword(username, newPassword, oldPassword) {
+    <span class="hljs-keyword">this</span>.checkUserExists(username);
+    <span class="hljs-comment">// Do the password change</span>
+  }
+
+  checkUserExists(username) {
+    <span class="hljs-keyword">let</span> query = <span class="hljs-keyword">this</span>.db.select(<span class="hljs-string">&quot;*&quot;</span>).from(<span class="hljs-string">&quot;users&quot;</span>).where(<span class="hljs-string">&quot;username == &quot;</span> + username);
+    <span class="hljs-keyword">let</span> rows = <span class="hljs-keyword">this</span>.db.exec(query);
+    <span class="hljs-keyword">if</span> (rows.count == <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-string">&quot;user not exists&quot;</span>;
+    }
+  }
+}
+</code></pre>
+<h2 id="you-arent-gonna-need-it-yagni">You Aren&apos;t Gonna Need It (YAGNI)</h2>
+<p>Code is not for free. It has a cost. A cost to write it, and a cost to maintain it. So the more code you have, the more you are investing on it. As most of us write code to support some business, we expect to have a as much return of investment as possible from it. This has a special implication: each block of code we write has to add value to the software. Otherwise, it should not be written.</p>
+<p>Too often, we write code we think it&apos;s useful. Or it will be useful in the future. Typically adding functionality to the application that is not really needed. The return of investment of that is negative. We dedicate time to write and maintain that code when actually is not producing value to the business.</p>
+<p>The solution: do not write functionality that is not needed. Implement the most functionaly simple thing that could work. But note: this is not a declaration to do the code as fast as possible, implement hacks and forget about clean code, tests, etc. This is about functionality. Do not implement functionality that was not required.</p>
+<h2 id="keep-it-simple-stupid-kiss">Keep It Simple Stupid! (KISS)</h2>
+<p>Every piece in a machine is a possible source of failure. Every gear, bearing, switch, button, bulb, can fail by its own. And when they fail, it&apos;s really likely that the rest of the machine turns inoperative. Also, many pieces working together require a bigger cognitive load. These systems are more difficult to understand, to learn how they work.</p>
+<p>It is a maths rule. The more pieces you have in your machine, the more probability of failure. And the more difficulties to understand how the machine work. Software is not an exception. An application comprised by hundred of modules working together is more error prone and hard to understand than one made of a bunch of them.</p>
+<p>That&apos;s why keeping things simple and avoiding unnecessary complexity is a good practice.</p>
+<h2 id="the-billion-dollar-mistake">The Billion Dollar Mistake</h2>
+<p>In 1965, Tony Hoare was working on the design of a new programming language: ALGOL W. This was the first language to incorporate the concept of <em>reference</em>: a type system artifact that make a variable to &quot;point&quot; to a value. They designed the language so references could be <em>null</em>, so they point to no value. Since then, almost every programming language that support references accepts null (some call it <em>nil</em> instead).</p>
+<p>In 2009, Tony Hoare apologised for inventing the null reference during a conference in London. He called that his Billion Dollar Mistake. Null references has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage since invented.</p>
+<p>What&apos;s wrong with null references? Well, the main problem is that very often we programmers use to make an assumption over references: they are not null. We define a class, define some methods...</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ScanService</span> </span>{
+  <span class="hljs-comment">// ...</span>
+  scan(product, amount) {
+    <span class="hljs-comment">// ...</span>
+    <span class="hljs-keyword">this</span>.total += product.price * amount;
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<p>...and we assume <code>product</code> and <code>amount</code> are never null. But then, somehow, a null value is received in <code>product</code>. Perhaps because it was read from a JSON field that came through a HTTP request. And we didn&apos;t check it is null or not while unmarshalling (again: we don&apos;t expect that). So we end up executing the equivalent to <code>this.total += null.price * amount</code>. And that fails throwing:</p>
+<pre><code>TypeError: Cannot read property &apos;price&apos; of null
+</code></pre><p>This happens all the time. It&apos;s the top 1 of mistakes that make a system crash. Probably the impact in the software industry is much more than 1 billion dollars.</p>
+<p>How can we deal with this? Well, it&apos;s not easy. Unfortunately, most programming languages consider that any variable can be null (everything is a reference, thus everything can be null). That&apos;s the case of Javascript, Ruby, Python, Java... . Nevertheless, there are some useful tips that help to mitigate the effects.</p>
+<p>The first one is to put barries in your code to prevent the entrance of null values in your application. If you receive data from the network, from a file, from a database, make sure it contains no null values. Implement validations there and do not let any null to enter your domains, signalling the error (throw an exception, return HTTP 400 response, etc).</p>
+<p>Once we have that, we will find we have to admit a variable can be null. For example, the <code>email</code> field of our <code>User</code> data class could be null to indicate we don&apos;t have the email for that user. In these cases, it could be convenient to use a placeholder constant that represents that null value. The placeholder is not a null reference, but a reference to an actual value that can behave like a regular one.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> NULL_EMAIL = <span class="hljs-string">&quot;Email address was not set&quot;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+  <span class="hljs-keyword">constructor</span>(firstName, lastName) {
+    <span class="hljs-keyword">this</span>.firstName = firstName;
+    <span class="hljs-keyword">this</span>.lastName = lastName;
+    <span class="hljs-keyword">this</span>.email = NULL_EMAIL;
+  }
+}
+</code></pre>
+<p>Thanks to that, we will have a defined behavior for any possible value of <code>email</code> field, even when its null. For instance, we can print the <code>User</code> properties without checking if things are null or not, so using our favorite HTML renderer:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>User information:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>First name: {{ $user.firstName }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Last name: {{ $user.lastName }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Email: {{ $user.email }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>We can also compare email values to check if they are unset when needed. For instance, while sending emails:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mailing_campaign</span>(<span class="hljs-params">users, message</span>) </span>{
+  users.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user</span>) </span>{
+    <span class="hljs-keyword">if</span> (user.email != NULL_EMAIL) {
+      send_email(user.email, message);
+    }
+  })
+}
+</code></pre>
+<p>Another way to solve this is to use an <em>option type</em>. This is a data type present in some languages that can have one of these two states:</p>
+<ul>
+<li>Some(x), where <em>x</em> is the value it wraps. It represents a non-null value.</li>
+<li>None. It represents a null value.</li>
+</ul>
+<p>Some examples are the <code>Optional&lt;T&gt;</code> generic class in Java 8 or the <code>Option&lt;T&gt;</code> enum type in Rust.</p>
+<p>The point is that, when using statically typed languages (read <a href="99-polymorphism-and-abstract-types.html">this section for more details</a>), we will interact with the interface of that optional type, forcing the programmer to consider that it can be <em>none</em>.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+  <span class="hljs-keyword">private</span> String firstName;
+  <span class="hljs-keyword">private</span> String lastName;
+  <span class="hljs-keyword">private</span> Optional&lt;String&gt; email;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">User</span><span class="hljs-params">(String firstName, String lastName)</span> </span>{
+    <span class="hljs-keyword">this</span>.firstName = firstName;
+    <span class="hljs-keyword">this</span>.lastName = lastName;
+    <span class="hljs-keyword">this</span>.email = Optional.empty(); <span class="hljs-comment">// This is None</span>
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Optional&lt;String&gt; <span class="hljs-title">getEmail</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.email; }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEmail</span><span class="hljs-params">(String value)</span> </span>{
+    <span class="hljs-keyword">this</span>.email = Optional.of(value); <span class="hljs-comment">// This is Some(value)</span>
+  }
+  <span class="hljs-comment">// ...</span>
+}
+
+User user = <span class="hljs-keyword">new</span> User(<span class="hljs-string">&quot;John&quot;</span>, <span class="hljs-string">&quot;Carpenter&quot;</span>);
+user.setEmail(<span class="hljs-string">&quot;john.carpenter@example.com&quot;</span>);
+</code></pre>
+<p>Our <code>email</code> property is not <code>String</code>, but <code>Optional&lt;String&gt;</code>. So we have to use it accordingly:</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">sendEmail</span><span class="hljs-params">(String address, String message)</span> </span>{ ... }
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">mailingCampaign</span><span class="hljs-params">(List&lt;User&gt; users, String message)</span> </span>{
+  <span class="hljs-keyword">for</span> (User user : users) {
+    <span class="hljs-comment">// ERROR: getEmail() is not String but Optional&lt;String&gt;</span>
+    <span class="hljs-comment">// sendEmail(user.getEmail(), message)</span>
+
+    <span class="hljs-comment">// OK: Optional implements ifPresent(), that will execute the action only when defined</span>
+    user.getEmail().ifPresent(email -&gt; sendEmail(email, message));
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Good Practices">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-design-practices.html" class="navigation navigation-next " aria-label="Next page: Design Good Practices">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"General Good Practices","level":"1.6.1","depth":2,"next":{"title":"Design Good Practices","level":"1.6.2","depth":2,"path":"102-appendix-good-practices/02-design-practices.md","ref":"102-appendix-good-practices/02-design-practices.md","articles":[]},"previous":{"title":"Good Practices","level":"1.6","depth":1,"path":"102-appendix-good-practices/README.md","ref":"102-appendix-good-practices/README.md","articles":[{"title":"General Good Practices","level":"1.6.1","depth":2,"path":"102-appendix-good-practices/01-general-practices.md","ref":"102-appendix-good-practices/01-general-practices.md","articles":[]},{"title":"Design Good Practices","level":"1.6.2","depth":2,"path":"102-appendix-good-practices/02-design-practices.md","ref":"102-appendix-good-practices/02-design-practices.md","articles":[]},{"title":"Polymorphism and Abstract Types","level":"1.6.3","depth":2,"path":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","ref":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"102-appendix-good-practices/01-general-practices.md","mtime":"2022-04-29T07:27:32.089Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

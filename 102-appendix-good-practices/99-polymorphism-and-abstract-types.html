@@ -1,0 +1,610 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Polymorphism and Abstract Types · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="02-design-practices.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="01-general-practices.html">
+            
+                <a href="01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="02-design-practices.html">
+            
+                <a href="02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="99-polymorphism-and-abstract-types.html">
+            
+                <a href="99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Polymorphism and Abstract Types</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="polymorphism-and-abstract-types">Polymorphism and Abstract Types</h1>
+<p>If you come with a background in Javascript exclusively, it is very likely that terms like <em>interface</em> or <em>abstract type</em> are totally new to you. Since these terms are massivelly used when talking about good practices in Object Oriented Programming, we will dedicate this section to explain them in detail.</p>
+<h2 id="dynamically-vs-statically-typed-languages">Dynamically vs statically typed languages</h2>
+<p>Javascript is a dynamically typed language. It roughtly means that the types of the variables of your program are determined in runtime, when the program is executed. One example in Javascript:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">return</span> num % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>Here, we expect <code>num</code> to be a number. But we do not indicate so in any way. We expect that, whenever this function is invoked when executed, the runtime will handle any possible type error. In Javascript, most of the situations are handled by doing nothing. In this particular case, passing anything that is not a number as argument will do: strings, objects, nulls... as all them respond to the <code>%</code> operator. So they will provide unexpected results. They will fail silently.</p>
+<pre><code class="lang-javascript">isEven(<span class="hljs-number">1</span>) <span class="hljs-comment">// false</span>
+isEven(<span class="hljs-number">2</span>) <span class="hljs-comment">// true</span>
+isEven(<span class="hljs-string">&quot;Hello&quot;</span>) <span class="hljs-comment">// false</span>
+isEven(<span class="hljs-literal">null</span>) <span class="hljs-comment">// true</span>
+isEven(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>) <span class="hljs-comment">// false</span>
+</code></pre>
+<p>Some other dynamically typed languages are more strict, and will throw an explicit error in this case.</p>
+<pre><code class="lang-ruby"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even</span><span class="hljs-params">(num)</span></span>
+  num % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>
+<span class="hljs-keyword">end</span>
+
+is_even(<span class="hljs-number">1</span>) <span class="hljs-comment"># false</span>
+is_even(<span class="hljs-number">2</span>) <span class="hljs-comment"># true</span>
+is_even(<span class="hljs-keyword">nil</span>) <span class="hljs-comment"># NoMethodError: undefined method `%&apos; for nil:NilClass</span>
+is_even(new Object) <span class="hljs-comment"># NoMethodError: undefined method `new&apos; for main:Object</span>
+</code></pre>
+<p>These are dynamically typed languages. By contrast, some other are statically typed languages. Roughtly speaking, these languages are characterized by requiring the programmer to indicate what&apos;s the type of every variable used in his code. One example in Go:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> IsEven(num <span class="hljs-keyword">int</span>) <span class="hljs-keyword">bool</span> {
+    <span class="hljs-keyword">return</span> num % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>
+}
+</code></pre>
+<p>As you can see, we have to indicate <code>num</code> is an integer value. We also indicate the result type of <code>IsEven()</code> function is a boolean. But, how is this information used? Simple. These languages have a compilation step prior to the execution of the program. While compiling, the source code is processed by a tool (the compiler) that will convert it in a &quot;executable&quot; program. In this conversion process, the program is also checked to be valid. And one of the validations the compiler do is a <strong>type check</strong>. It ensures <code>IsEven()</code>, and any other function, is not invoked with values of wrong data types. So this fragment of code would be accepted by the compiler:</p>
+<pre><code class="lang-go">  fmt.Println(IsEven(<span class="hljs-number">1</span>)) <span class="hljs-comment">// false</span>
+  fmt.Println(IsEven(<span class="hljs-number">2</span>)) <span class="hljs-comment">// true</span>
+</code></pre>
+<p>While this other will not:</p>
+<pre><code class="lang-go">  fmt.Println(IsEven(<span class="hljs-string">&quot;Hello&quot;</span>)) <span class="hljs-comment">// compilation error: cannot use &quot;Hello&quot; (type string) as type int in argument to IsEven</span>
+</code></pre>
+<p>Dynamically and statically typed languages implement abstractions in a different way. Thus, it&apos;s important to understand the difference before further discussion.</p>
+<h2 id="polymorphism">Polymorphism</h2>
+<p>This is a key concept related to abstractions in Object Oriented Programming. Polymorphism is the provision of a single interface to entities of different types. In other words, to define a contract of what we can obtain from an object (the interface) that is safisfied by different data types. Doing that we can write code that depends exclusively on the interface (what it does) and not in the implementation (how it does).</p>
+<p>Polymorphism is implemented in a completely different way depending on the language is dynamically or statically typed. In dynamically typed languages, it is obtained via <strong>Duck Typing</strong>. Since type checks are done in runtime, the object is checked to implement a method call (implement the expected interface) when the program is executed. Some example in Javascript:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
+  talk() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Meow!&quot;</span>;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
+  talk() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Woof!&quot;</span>;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">animal</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The animal says: &quot;</span>, animal.talk());
+}
+</code></pre>
+<p>Please note both classes, <code>Cat</code> and <code>Dog</code>, implement a <code>talk()</code> method. There is a really important implication here: both classes implement the same interface: an object that can respond to calls to <code>talk()</code>. We didn&apos;t specified the existence of such a interface in the code. But a kind of <code>Animal</code> interface is there, implicitely, in the code. This is essentially the Duck Typing: <em>If it walks like a duck and it quacks like a duck, then it must be a duck</em>. In other words, if we find in runtime a value that has the structure required by the interface, it works. In our example we could talk about animal typing. But... you get the idea.</p>
+<p>In contrast, statically typed languages require that every type is specified before compilation. So in languages like Java we will use another technique: subtyping polymorphism.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Animal</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">abstract</span> String <span class="hljs-title">talk</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Animal</span> </span>{
+    <span class="hljs-function">String <span class="hljs-title">talk</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Meow!&quot;</span>;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Animal</span> </span>{
+    <span class="hljs-function">String <span class="hljs-title">talk</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Woof!&quot;</span>;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">(Animal a)</span> </span>{
+  println(a.talk());
+}
+</code></pre>
+<p>In this case, he had to declare the interface <code>Animal</code> explictly. We also indicated explicitely that both <code>Cat</code> and <code>Dog</code> implement the interface of <code>Animal</code>. And then we can define function <code>f()</code> to accept any value that implements the interface.</p>
+<h2 id="abstractions">Abstractions</h2>
+<p>While talking about Object Oriented Design and <a href="02-design-practices.html">good practices associated to it</a>, we will mention things like <em>interface</em>, <em>abstract class</em>, <em>implementation</em>, etc. We are actually talking about using the polymorphism techniques available in our programming language to define interfaces for different types. And we will depict the things using diagrams like this one:</p>
+<div class="mermaid">
+graph TD
+  Animal-. implements .- Cat
+  Animal-. implements .- Dog
+</div>
+
+<p>So that&apos;s all about abstractions. Define interfaces, explicitely or not, that we can use in other parts of the code to abstract them from the actual implementations and separate the concerns.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-design-practices.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Design Good Practices">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Polymorphism and Abstract Types","level":"1.6.3","depth":2,"previous":{"title":"Design Good Practices","level":"1.6.2","depth":2,"path":"102-appendix-good-practices/02-design-practices.md","ref":"102-appendix-good-practices/02-design-practices.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","mtime":"2022-04-29T07:27:32.089Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

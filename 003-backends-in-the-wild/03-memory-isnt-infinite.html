@@ -1,0 +1,626 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Memory isn't infinite · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-observability.html" />
+    
+    
+    <link rel="prev" href="02-deploying.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01-computers-disappear.html">
+            
+                <a href="01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-deploying.html">
+            
+                <a href="02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="03-memory-isnt-infinite.html">
+            
+                <a href="03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="06-observability.html">
+            
+                <a href="06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Memory isn't infinite</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="memory-isnt-infinite">Memory isn&apos;t infinite</h1>
+<h2 id="work-takes-memory-for-some-time">Work takes memory for some time</h2>
+<p>It shouldn&apos;t come as a surprise that doing computing work involves <strong>allocating memory resources to it</strong> for <strong>some time</strong>.</p>
+<p>This simple fact is often ignored. This would be a reasonable course of action if memory and time were infinite resources. Alas, they aren&apos;t!</p>
+<p>Gracefully managing overloaded servers is a crucial missing piece in our magnificent strategy for designing robust systems.</p>
+<p>As often happens, libraries, frameworks and tools make it absurdly convoluted to get this right. So you need to take the techniques we&apos;re going to learn to heart, and conscientiously apply them whenever you see a chance worth of them.</p>
+<h2 id="the-bottleneck-path-to-unavailability">The bottleneck path to unavailability</h2>
+<p>Consider a system like this:</p>
+<div class="mermaid">
+graph LR
+  a[&quot;0/&#x221E; serving, +0.1 s/req&quot;] --&gt; b[&quot;0/3 serving, 0 queued, +1 s/req&quot;]
+</div>
+
+<p>The component at the left just takes requests and passes them to its dependency on the right.</p>
+<p>The dependency on the right takes 1 second to serve a request, but it can only serve 3 requests at a time: additional concurrent requests are queued. As ongoing requests finish, the oldest requests in the queue are served.</p>
+<p>The backend on the left adds 0.1 seconds per request to whatever its dependency takes to respond.</p>
+<p>It&apos;s easy to see that this setup will happily serve requests at 1.1 seconds per request, as long as we don&apos;t have more than three concurrent requests at any time.</p>
+<p>Meanwhile, we say that the component at the left can handle any number of concurrent requests. This isn&apos;t realistic, but it doesn&apos;t matter: since every request must go through the dependency, the only thing that matters is whether this dependency is faster than you or not.</p>
+<p>When a dependency of yours is less performant than you, it becomes a <em>bottleneck</em>: even if your part of the work is pretty fast, you&apos;re still slow, because a bottleneck is slow.</p>
+<h3 id="bottlenecks-at-capacity-&#x2192;-queued-requests">Bottlenecks at capacity &#x2192; queued requests</h3>
+<p>But what happens if we go over that limit?</p>
+<p>Suppose that requests reach the bottleneck at t+0.3, t+0.4, t+0.6 and t+0.8.</p>
+<p>The first three requests will be responded after 1 s each, at t+1.3, t+1.4 and t+1.6 respectively. But what about the fourth? The fourth won&apos;t be responded at t+1.8, but at t+2.3, taking 1.5 s instead of 1 s. How so?</p>
+<ul>
+<li>When it arrives at 0.8 s, the bottleneck will have three already. The bottleneck can&apos;t start working on the request yet, since it&apos;s <em>at capacity</em>: it is added to the queue.</li>
+<li>Only when the first requests is responded, at t+1.3, will the component start working on the fourth request.</li>
+<li>That takes a second, so t+1.3 + 1 s = t+2.3.</li>
+</ul>
+<p>Note that this bottleneck doesn&apos;t need to be in an external service. It can be a CPU-intensive task, a shared connection to a database, or anything else that takes longer than you.</p>
+<h3 id="queued-requests-&#x2192;-higher-response-latencies">Queued requests &#x2192; higher response latencies</h3>
+<p>As more requests are queued, the latency of new requests increase: since they&apos;re taken from the queue later, and started later, they&apos;re also responded later.</p>
+<p>Note that it only takes a sustained rate of &gt;3 req/s to cause the queue to keep growing and growing. Even 3.00001 req/s will cause the queue to grow. Latencies will grow proportionally.</p>
+<h3 id="higher-response-latencies-&#x2192;-more-timeouts">Higher response latencies &#x2192; more timeouts</h3>
+<p>Eventually, latencies will grow so much that the end clients will start timing out, resulting in failed requests.</p>
+<p><a href="../001-programming-a-backend/02-serving-an-api.html#server-cancel-work-when-the-connection-dies">Canceling such requests</a> helps, as those requests can be removed immediately from the queue, but then the bottleneck will successfully process only the maximum amount of requests per second that keeps the slowest requests just under the client&apos;s timeout period.</p>
+<h3 id="more-timeouts-&#x2192;-more-retries">More timeouts &#x2192; more retries</h3>
+<p>As we&apos;ve learned, if we really want an operation to succeed, after a timeout, <a href="../001-programming-a-backend/01-more-than-one-computer.html#continued-retries--idempotency--guaranteed-eventual-success">we retry it</a>.</p>
+<p>But if we do this, we accumulate:</p>
+<ul>
+<li>The rate of new requests per second.</li>
+<li>The rate of retried requests per second.</li>
+</ul>
+<p>Just by following this strategy, the requests rate that our system is subjected to quickly skyrockets! Since we&apos;re already at capacity, incoming requests just fail, so new requests, retries, retries of retries, retries of retries of retries, etc. just accumulate, and we receive more and more requests per second.</p>
+<p>At this point, the system is fully unavailable: none or almost none of the requests arriving to it are successfully served. They all just time out.</p>
+<h3 id="more-retries-&#x2192;-more-queued-requests">More retries &#x2192; more queued requests</h3>
+<p>This vicious circle, of course, makes the requests queue grow at exponentially increasing speed.</p>
+<h3 id="enough-queued-requests-&#x2192;-memory-exhaustion">Enough queued requests &#x2192; memory exhaustion</h3>
+<p>Eventually, we just won&apos;t have enough space for more queued requests. What happens then? It boils down to two options:</p>
+<ul>
+<li>Incoming requests are dropped.</li>
+<li>In-flight requests are dropped, probably by crashing the whole process (OOM, Out Of Memory: the operating system starts killing processes).</li>
+</ul>
+<p>It doesn&apos;t matter much: eventually we arrive at the same situation.</p>
+<h2 id="the-unbounded-concurrency-path-to-unavailability">The unbounded concurrency path to unavailability</h2>
+<p>OK, that&apos;s assuming there&apos;s some bottleneck that consumes requests at a slower pace than requests arrive to it. What if there isn&apos;t? What if handling a request takes 0.1 s, or even 0.0001 s, and there&apos;s no limit (for the sake of argument) to the amount of concurrent requests after which we enqueue requests?</p>
+<h3 id="enough-request-handlers-&#x2192;-memory-exhaustion">Enough request handlers &#x2192; memory exhaustion</h3>
+<p>So imagine that:</p>
+<ul>
+<li>Handling a request takes 2 KB of memory.</li>
+<li>Handling a request takes 0.0001 s.</li>
+<li>The machine has 24 GB of memory.</li>
+</ul>
+<p>It takes 24 GB / 2 KB = 12000 concurrent requests to run out of memory.</p>
+<p>To create enough concurrent request handlers to fill that memory, we need to make 12000 requests in under 0.0001 s, which is 120 Mreq/s. Which is big, but not infinite!</p>
+<p>The point is that, no matter how fast a request is handled, how little memory it consumes, or how much memory a machine has, there&apos;s <em>some</em> number of concurrent requests that results in memory exhaustion, which results in requests dropped, and thus, unavailability.</p>
+<p>Needless to say, continuously retrying all those requests won&apos;t make things better.</p>
+<h3 id="increasing-requestssecond-by-async-queuing-&#x2192;-queue-exhaustion">Increasing requests/second by async queuing &#x2192; queue exhaustion</h3>
+<p>A first approach to reduce the impact of bottlenecks is to <strong>put the bottleneck behind an async message queue</strong>.</p>
+<p>Returning to our example above, and assuming that publishing to the message queue is, say, 0.2 s, we effectively serve each request at 0.3 s. The actual work will take just as above, even more taking into account the message enqueueing and dequeuing overhead, but there won&apos;t be clients waiting for it, timing out, retrying, and making things worse.</p>
+<p>This is useful if the request rate goes over our hard limit of 3 req/s for some time, then wears off and goes under it: the queue will fill for that interval, but then slowly decreases as the bottleneck catches up. Thus, queuing work is useful to <strong>resist temporary load spikes</strong>.</p>
+<p>But if the request rate is constantly above our hard limit of 3 req/s, then the queue will <strong>eventually be exhausted</strong> too, and the message broker will be forced to <strong>reject new publishes</strong>, resulting again in unavailability, retries piling up, etc.</p>
+<h2 id="backpressure">Backpressure</h2>
+<p>In face of all this, the rule for letting an overloaded system recover is rather simple:</p>
+<blockquote>
+<p>Make fewer requests to an unavailable system, not more.</p>
+</blockquote>
+<p>Forcibly reducing the requests per second that reach a system lets its bottleneck catch up with pending work, emptying queues. We then give the system operators the chance of making the bottleneck faster by scaling, or maybe just let the bottleneck solve itself if it was due to some temporary condition.</p>
+<p>Designing clients for reducing load on unavailable services is called <em>backpressure</em>.</p>
+<p>Implementing backpressure is probably the most ignored robustness mechanism out there, but it&apos;s absolutely crucial and not even hard to do.</p>
+<h3 id="exponential-backoff">Exponential backoff</h3>
+<p>We&apos;ve repeated again and again that retrying is good, but we&apos;ve seen it backfire badly when systems are overloaded. Should we give retries up then?</p>
+<p>Not necessarily. We&apos;ve left open the question of <em>when</em> we should retry an operation. Should we wait some time? How much?</p>
+<p>Say we choose to retry a failed operation after 5 seconds. If we&apos;re consistently overloaded by the incoming request rate, that still means that retries will keep piling up, and the overall request rate, aggregating new requests, retries, retries of retries, etc. will still grow. Retrying each 30 seconds instead just makes this growth slower.</p>
+<p>The solution is beautiful in its mathematical elegance: cancel out this tendency to grow by <strong>retrying any given operation less often over time</strong>.</p>
+<p>As a result, retries will arrive evenly distributed in time. As the period of unavailability grows, retries don&apos;t pile up; instead, they will arrive over a proportionally growing period of time, but at a fixed rate.</p>
+<p>This breaks the vicious circle and gives the system a chance to catch up with the new request rate requirements so that eventually the system is reliably available again.</p>
+<h3 id="circuit-breaker">Circuit breaker</h3>
+<p>An even more radical and effective way of reducing load to an unavailable system is to <strong>prevent all operations for some time</strong> on a service <strong>when one operation</strong>, or a few operations in a row, <strong>fails</strong>. During that period, way say that <strong>the circuit is broken</strong>.</p>
+<p>While exponential backoff of retries of individual operations keeps the request rate to the unavailable service constant, circuit breakers <strong>reduce the request rate dramatically</strong>, to almost zero. This makes it so much easier for bottlenecks to recover quickly.</p>
+<p>So, for how long should we keep the circuit broken? If we choose a big interval, we can often be pessimistically preventing operations while the service is actually available again. But if we choose a small interval, we make more requests to a service that may still be unavailable.</p>
+<p>Choosing small interval is probably good enough: in practice, no system will get overloaded by receiving, say, 3 requests per second, which gives an interval of 0.3 s.</p>
+<p>We can combine both approaches by implementing some exponential back off. But we must be careful to cap it at some reasonable interval, say 3-5 seconds. Otherwise, we might spend really long periods of time preventing requests that is back to normal.</p>
+<h3 id="health-as-a-spectrum">Health as a spectrum</h3>
+<p>Another way of implementing backpressure is making health checks more nuanced: instead if responding &quot;yes, I&apos;m available&quot; or &quot;nope, I can&apos;t serve&quot;, respond with <strong>some measurement of the level of overload</strong> in the server. (A high percentile of the latencies over a period is a good metric.)</p>
+<p>The load balancer can then <strong>forward fewer requests to slower backends</strong>, making it easier on them to recover.</p>
+<p>Of course, this only helps when the overload is <strong>asymmetric</strong>. It won&apos;t help if, as it&apos;s often the case, all backends of a service are equally overloaded since they depend on the same bottleneck.</p>
+<h2 id="in-the-end-the-bottleneck-must-be-fixed">In the end, the bottleneck must be fixed</h2>
+<p>Backpressure is great for avoiding making the problem worse, but, by itself, won&apos;t make the problem disappear: we&apos;re receiving more requests that our system supports.</p>
+<p>This points to an insufficient resource allocation. If it&apos;s due to some transient failure somewhere, the resources may come back by themselves, but if we are just getting more traffic that we&apos;ve designed for, then we must scale up the system.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-deploying.html" class="navigation navigation-prev " aria-label="Previous page: Deploying">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-observability.html" class="navigation navigation-next " aria-label="Next page: Observability">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Memory isn't infinite","level":"1.4.3","depth":2,"next":{"title":"Observability","level":"1.4.4","depth":2,"path":"003-backends-in-the-wild/06-observability.md","ref":"003-backends-in-the-wild/06-observability.md","articles":[]},"previous":{"title":"Deploying","level":"1.4.2","depth":2,"path":"003-backends-in-the-wild/02-deploying.md","ref":"003-backends-in-the-wild/02-deploying.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"003-backends-in-the-wild/03-memory-isnt-infinite.md","mtime":"2022-04-29T07:27:32.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,658 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Observability · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../101-appendix-containers/" />
+    
+    
+    <link rel="prev" href="03-memory-isnt-infinite.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01-computers-disappear.html">
+            
+                <a href="01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-deploying.html">
+            
+                <a href="02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03-memory-isnt-infinite.html">
+            
+                <a href="03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="06-observability.html">
+            
+                <a href="06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Observability</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="observability">Observability</h1>
+<h2 id="why-we-need-to-observe">Why we need to observe</h2>
+<p>As we&apos;ve seen, our services and our infrastructure are more distributed and ephemeral day by day. Our systems are more advanced and every one have different reliability targets, requirements and guarantees. All the cloud services (and custom services if configured properly) provides a robust abstraction over network and hardware failures, which means that as software developers we must ensure that our applications are good enough to survive with that networking and scheduling abstractions. We need to gain visibility into the behavior of our applications.</p>
+<p>Traditionally the systems engineers had some dashboards with operational monitoring and alerting (CPU/Memory/...), and that was enough to know if the application was going well or no. Nowadays with distributed systems we need to go further in order to ensure the correct behavior of our system. That&apos;s Observability, it&apos;s more than logs, metrics and traces. In the most abstract and complete way, observability is a property of a system that has been designed, built, tested, deployed, operated, monitored, maintained and evolved in acknowledgment of this facts:</p>
+<ul>
+<li>No complex system is ever fully healthy</li>
+<li>Distributed Systems are pathologically unpredictable</li>
+<li>It&apos;s impossible to predict the myriad states of partial failure the parts of the system might end up</li>
+<li>Failure needs to be embraced in every phase: system design, implementation, testing, deploying and operation</li>
+<li>Ease of debugging is a cornerstone for the maintenance and evolution of robust systems</li>
+</ul>
+<h2 id="monitoring-and-observability">Monitoring and Observability</h2>
+<p>Observability is not a substitute to monitoring, observability is a superset of monitoring, which means that to achieve observability you will need good monitoring, but you will need more things.</p>
+<p>We&apos;ll focus on some techniques of observability, but there are many more, observability it&apos;s more a team mindset than a set of tools or techniques. All the system has to be designed with some concepts in mind:</p>
+<ul>
+<li>A system need to be prepared to be tested in a realistic manner.</li>
+<li>A system can be deployed gradually and the roll-back/roll-forward are easy, fast and can be automatic</li>
+<li>A system must be able to report data points about his health and behavior.</li>
+</ul>
+<h3 id="monitoring">Monitoring</h3>
+<p>Monitoring is the way to report the overall health of the system and create alerts. The monitorized data can be very different, RAM/CPU used, requests/s, latency, DNS lookup, etc. The key factor of monitoring is that is predictable (you can assume that if some metric goes higher than X you have a problem), it affects the end users, and needs human intervention as soon as possible.</p>
+<p>There are two general types of monitoring (You can learn more <a href="https://devops.com/black-box-vs-white-box-monitoring-what-you-need-to-know/" target="_blank">here</a>):</p>
+<ul>
+<li>Blackbox monitoring. You observe the systems from the outside, this is the most common monitoring done in the companies, and it refers to metrics like CPU, disk space, memory, load averages, etc.</li>
+<li>Whitebox monitoring. You observe the applications running instead of the systems, with distributed systems is more common. It can be metrics like SQL queries running, number of users in an application, requests with error or requests with success, etc.</li>
+</ul>
+<p>Even though whitebox monitoring is used more and more, we can&apos;t forget blackbox monitoring, specially when you depend of external services (like a database hosted by a third party company) that you can only do blackbox monitoring.</p>
+<h4 id="alerting">Alerting</h4>
+<p>Monitoring data must provide a global view of the health of a distributed system exposing high-level metrics over time across all components (load balancers, caches, databases, services). An alert must have some monitoring data attached with the ability to drill down into components and systems to diagnose the scopes and the nature of the fault.</p>
+<p>Additionally, in the occurrence of an alert, the monitoring data should be able to provide visibility into the impart of the failure and the effect of any fix deployed. Also, for the best on-call experience, all alerts need to be actionable, which means that you have to be able to know what to do with the alert data.</p>
+<p>There are two set of metrics for monitoring purposes:</p>
+<ul>
+<li>USE methodology analyses the system performance. The metrics will be used for measuring utilization, saturation and errors or system resources, eg: memory, CPU, divide errors, queue length.</li>
+<li>RED methodology analyses the applications. This method calls for monitoring the request rate, error rate and duration of request. Really necessary for monitoring request-driven applications.</li>
+</ul>
+<h2 id="coding-and-testing-in-production">Coding and testing in production</h2>
+<p>As we&apos;ve seen, observability is a state of mind where the whole system has been developed with it in mind, and one important point in this is not rely only on pre-production testing. It&apos;s important, but being able to test in production elevates the resilience of your code and your observability. In order to achieve that state, the whole team will need to code and test for failure, instead of coding for success.</p>
+<p>There are three main things to write code for failure:</p>
+<h3 id="operational-semantics-of-the-application">Operational semantics of the application</h3>
+<p>The developer must be aware of the operational semantics of the application, for example:</p>
+<ul>
+<li>How the service will be deployed</li>
+<li>How an application handles signals</li>
+<li>How it registers with service discovery</li>
+<li>How it discovers upstreams</li>
+<li>How graceful the restarts will be</li>
+<li>How the configuration will be received</li>
+<li>The concurrency model</li>
+<li>...</li>
+</ul>
+<p>There are many operational questions that nowadays the platform abstract from the developer, and it&apos;s important to be aware of all of them.</p>
+<h3 id="operational-characteristics-of-the-dependencies">Operational characteristics of the dependencies</h3>
+<p>You need to know, not only your operational characteristics, but the ones of your dependencies, so you are able to know if you want to use the default values of the dependencies or override it with your own value.</p>
+<ul>
+<li>How your cache library/service will work</li>
+<li>The configuration of your database library, the connection pool size, timeouts, etc</li>
+</ul>
+<h3 id="debuggable-code">Debuggable code</h3>
+<p>If your code is debuggable, you will be able to ask questions to your application when you are in trouble. For this you&apos;ll need to understand the instrumentation of choice (metrics, logs, exception traces, ...) and the pros/cons. With that knowledge, being able to pick the best combination of instrumentation for your service requirements. It seems an easy task, but it&apos;s not easy at all.</p>
+<h3 id="testing-for-failure">Testing for failure</h3>
+<p>Writing unit tests is important, but you will need to do more testing in order to improve your confidence in the application. At the end, unit testing only shows the happy path of your scope (and probably heavily mocked). But we know that when the complexity of the systems grows, it will fail in more complex ways that you can&apos;t predict.</p>
+<p>Lately more and more ways of testing in production have appeared, and many of them will need you to write your application in order to ease that task.</p>
+<p>Here are the phases of testing, as you can see there are a myriad of tests.</p>
+<p><img src="06-testing-phases.png" alt="Testing in production. A table with four columns: pre-production, deploy, release and post-release. All these columns represent testing in production."></p>
+<p>Testing in production is hard, and not eliminate all the system failures, but it will build confidence in the reliability of complex distributed systems</p>
+<h2 id="logging">Logging</h2>
+<p>An event log is an immutable, timestamped record of events that happened over time. There are three main forms of event logs:</p>
+<ul>
+<li>Plain-text, the most common format of logs, this is just free text</li>
+</ul>
+<p><code>[2018-11-14T18:50:18.003Z]  INFO: hello/40026 on rock.local: hi ironhack</code></p>
+<ul>
+<li>Structured, in recent days it&apos;s the beloved way to go, usually the format is JSON</li>
+</ul>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;time&quot;</span>: <span class="hljs-string">&quot;2018-11-14T18:50:18.003Z&quot;</span>,
+    <span class="hljs-string">&quot;level&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;hi ironhack&quot;</span>,
+    <span class="hljs-string">&quot;hostname&quot;</span>: <span class="hljs-string">&quot;rock.local&quot;</span>,
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;hello&quot;</span>,
+    <span class="hljs-string">&quot;pid&quot;</span>: <span class="hljs-number">40026</span>
+}
+</code></pre>
+<ul>
+<li>Binary, instead of an structured text format, is an structured binary format, like Protobuf or MySQL&apos;s binlog.</li>
+</ul>
+<p>The logs are important, because it&apos;s the application diary of all the activity, if the logs are detailed we can investigate when we have a bug or some error.</p>
+<p>Log events are the easiest observability key point to generate, since they are just text or JSON that the application generates and emit, and most languages have logging frameworks and libraries. In the logs you can add all the metadata you want, which provides a highly granular information with rich local context. Even more, if you use structured logging and some processor like ELK (Elasticsearch, Logstash, Kibana) you will find much more data and relations in your event logs.</p>
+<p>The main problem of logs is the performance, due to that most of the default or de-facto libraries are bad in performance. They are slow, write synchronously and/or have a big memory footprint. And, even with some really performant libraries, logging excessively has the capability to affect the application performance.</p>
+<p>Event data can be used in more situations than debugging, it&apos;s a great source of analytics data. The same event logs processed by a server can answer some business questions like &quot;Filter the countries from where users viewed this page less than 100 times&quot;, meanwhile for debugging the same data can answer questions like &quot;Show page loads from Spain that took more than 10s to load&quot;. The usual way to be able to do this kind of queries is to treat your event data like any other streaming data, processed by some indexing stores like Elasticsearch.</p>
+<h2 id="metrics">Metrics</h2>
+<p>Metrics are a numeric representation of data measured over intervals of time. They bring the power of mathematical modeling and predictions to the current and future system&apos;s behaviors.</p>
+<p>Unlike logging, metrics are mainly numeric representations, which are easily optimized for storage, processing and querying. This properties makes metrics perfectly suited to build dashboards with historical trends.</p>
+<p>Classic metric tools only had the metric name, timestamp and the metric value, which is limiting when you want to graph interactions between different applications in your distributed system. Modern metric tools such as Prometheus or newer versions of Graphite apart of the three classic values provides a way to assign labels to the metric.</p>
+<p>For example, the metrics for the duration of endpoints of an API, in an classic way would look like:</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;get_estimation&quot;</span>,
+    <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;2018-11-14T18:50:18.003Z&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;200&quot;</span>
+}
+</code></pre>
+<p>Instead, if the metric tools have labels support, you can have a generic metric for request, and add the granularity with labels:</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;request_duration&quot;</span>,
+    <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;2018-11-14T18:50:18.003Z&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;200&quot;</span>,
+    <span class="hljs-string">&quot;labels&quot;</span>: {
+        <span class="hljs-string">&quot;method&quot;</span>: <span class="hljs-string">&quot;get&quot;</span>,
+        <span class="hljs-string">&quot;action&quot;</span>: <span class="hljs-string">&quot;estimation&quot;</span>,
+        <span class="hljs-string">&quot;environment&quot;</span>: <span class="hljs-string">&quot;production&quot;</span>,
+        <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;200&quot;</span>,
+        <span class="hljs-string">&quot;code_family&quot;</span>: <span class="hljs-string">&quot;2xx&quot;</span>
+    }
+}
+</code></pre>
+<p>The advantages of metrics over logs is that transfer and storage has constant overhead. Unlike logs, with user traffic won&apos;t incur a significant increase in disk utilization, processing complexity, operational cost. The storage increases with more permutations of labels values but the client-side aggregation doesn&apos;t increase proportionally with user traffic.</p>
+<p>The are some metric tools, like statsd, that works in push model, which means that it sends the data to the server, which can lead to an auto DDOS to the metrics server. Other metric tools, like Prometheus, use the pull model, where the metrics server knows of the applications that it needs to &quot;scrape&quot; and every few seconds (that can be configured) retrieves the aggregated metrics from the applications. This pull based metric servers allow them to use back-pressure on the clients when they are not working properly.</p>
+<p>Thanks to the mathematical benefits, and that running queries against time-series databases is better on metrics that in some indexing storage for logs, it makes the metrics the tool best suited to trigger alerts.</p>
+<p>The main drawback of metrics is that they are system scoped, it&apos;s really hard to understand anything cross-application. With labels you can mitigate this, with the increase of metric storage of course. You could add some request UUID as label to all the metrics, so you can trace easily the metrics of that query in the distributed system, but this can overwhelm time-series databases, and it will make the graphs and queries slow. All popular time-series databases suffer performance under high cardinality labeling.</p>
+<p>Logs and metrics are perfect for a single system, and it&apos;s enough to understand the performance and behaviour of individual systems, but they aren&apos;t sufficient to understand the lifetime of a request in a distributed systems, to achieve that we&apos;ll need one more technique.</p>
+<h2 id="tracing">Tracing</h2>
+<p>A trace is a representation of a causally related distributed events that encode end to end request flow through a distributed systems.</p>
+<p>Traces are used to identify the amount of work done at each layer while preserving causality by using &quot;happens-before&quot; semantics.</p>
+<p>When a request begins, it&apos;s assigned a globally unique ID, which is propagated throughout the request path so every point of instrumentation will be able to enrich the metadata before passing around the ID when doing other requests. When the execution flow reaches the instrumented point a record is emitted with the metadata. With all that events with the unique ID and the metadata, we are able to construct the flow of execution based of the different events emitted in different parts of the system.</p>
+<p><img src="06-tracing-flow.png" alt="A representation of the tracing flow showing the time for each element."></p>
+<p>Having an understanding of the entire request cycle makes it possible to debug requests spanning to multiple services to identify the source of the increased latency.</p>
+<p>There are many use-case for distributed tracing, primarily used for inter service dependency analysis, distributed profiling and debugging.</p>
+<p>The most popular OpenTracing compliant solutions are Jaeger and Zipkin.</p>
+<p>As you can imagine, adding distributed tracing retroactively in an existing infrastructure is really hard, every component in the path needs to be modified to propagate the tracing information. You can start adding it, and you will have big gaps where the tracing has not been added, which can be better than not having tracing at all, but some people think that this blind spots makes debugging even harder.</p>
+<p>The second problem is that it&apos;s not enough to instrument your code, you need to instrument the libraries and frameworks that you use, which can be really hard sometimes.</p>
+<p>While tracing is difficult to implement, we&apos;ve seen a rise in &quot;service meshes&quot;, which makes almost effortless adding the tracing functionality. The service mesh most used by far is <a href="https://istio.io/" target="_blank">istio</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-memory-isnt-infinite.html" class="navigation navigation-prev " aria-label="Previous page: Memory isn't infinite">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../101-appendix-containers/" class="navigation navigation-next " aria-label="Next page: Containers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Observability","level":"1.4.4","depth":2,"next":{"title":"Containers","level":"1.5","depth":1,"path":"101-appendix-containers/README.md","ref":"101-appendix-containers/README.md","articles":[]},"previous":{"title":"Memory isn't infinite","level":"1.4.3","depth":2,"path":"003-backends-in-the-wild/03-memory-isnt-infinite.md","ref":"003-backends-in-the-wild/03-memory-isnt-infinite.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"003-backends-in-the-wild/06-observability.md","mtime":"2022-04-29T07:27:32.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

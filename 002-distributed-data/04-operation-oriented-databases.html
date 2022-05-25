@@ -1,0 +1,617 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Operation-oriented databases · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../003-backends-in-the-wild/" />
+    
+    
+    <link rel="prev" href="03-doing-things-later.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01-contradictions.html">
+            
+                <a href="01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02-persistent-state.html">
+            
+                <a href="02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03-doing-things-later.html">
+            
+                <a href="03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="04-operation-oriented-databases.html">
+            
+                <a href="04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Operation-oriented databases</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="operation-oriented-databases">Operation-oriented databases</h1>
+<h2 id="servers-serving-services">Servers serving services</h2>
+<p>Although there are many ways computer can communicate with each other, in the Web-oriented world we mostly deal with client-server relationships.</p>
+<p>In this model, there is a <em>service</em> that the server provides and the client consumes.</p>
+<p>For example, MongoDB provides a service to store your data while trying not to lose it too much. It does so through an API, which clients often interact with through a <em>client library</em>.</p>
+<p>In our case, the backend exposes all the functionality the frontend needs to activate as a result of user interaction, usually through an API built on top of HTTP and/or WebSockets, as those are the technologies that can be used from web browsers.</p>
+<p>But what is <em>the backend</em> exactly? Is it a single program? Is it a <em>system</em> of programs? Well, that&apos;s on us to design and implement. Let&apos;s see which <strong>choices</strong> we have, and their tradeoffs.</p>
+<h2 id="the-monolithic-backend">The monolithic backend</h2>
+<p>The no-brainer approach to building a backend is to design a system with the following components:</p>
+<ul>
+<li><strong>Generic services</strong> that handle some functionality for us: databases, mailers, file storage, reverse proxies, etc.</li>
+<li>A program that implements <strong>app-specific logic</strong> to handle requests from frontends.</li>
+<li>Maybe some <strong>peripheral programs</strong> that run <strong>periodically</strong> (<em>cronjobs</em>) or <strong>consume jobs</strong> from a message queue.</li>
+</ul>
+<p>This is the <em>monolith</em> approach: you have a single, big program that knows how to do everything.</p>
+<h2 id="a-constellation-of-microservices">A constellation of microservices</h2>
+<p>The thing is, successful software projects <strong>tend to grow</strong>:</p>
+<ul>
+<li>New functionality needs to be added.</li>
+<li>More existing functionality needs to be modified or extended.</li>
+<li>More people are put to work on it.</li>
+<li>They get more users and more load.</li>
+</ul>
+<p>As time passes, and the project grows and grows, the <strong>friction</strong> required to grow in all those dimensions increases, mainly because things that ought to be independent end up affecting each other.</p>
+<p><em>Microservices</em> is about reducing that friction by:</p>
+<ul>
+<li><strong>Splitting your backend&apos;s service</strong> in several.</li>
+<li>Have <strong>specialized programs</strong> for each one.</li>
+<li>Have them collaborate as a <strong>distributed system</strong>.</li>
+</ul>
+<p>Hoping that:</p>
+<ul>
+<li>New functionality is added as a new service, or as small changes to a small number of services.</li>
+<li>Changes affect a single service or only to a small number of services.</li>
+<li>Teams can focus on a single service or a handful of them, without getting affected by other teams working in other services.</li>
+<li>Each service is designed specifically for the kind of scale it needs to support, and the kind of mission they perform.</li>
+</ul>
+<p>The three first points are more about <em>development</em> than actual production concerns, but the fourth its just a hard technical reality: parts of your application probably have different technical needs than others, and having them as separate programs makes it easier to <strong>provide them with the resources that fits them best</strong>.</p>
+<p>Are microservices worth the trouble? It seems so, because organizations tend to naturally move towards them.</p>
+<h2 id="where-to-split">Where to split?</h2>
+<p>The criteria you use to assign responsibilities to microservices is pretty important. If you get it wrong, you can end up negating most of the benefits of doing microservices in the first place; such scenarios are called <em>distributed monolith</em>.</p>
+<h3 id="entity-oriented">Entity-oriented</h3>
+<p>This is maybe the most obvious way of segregating responsibility, since it&apos;s <strong>the way code is usually split</strong> in a codebase.</p>
+<p>You identify <em>entities</em> in your domain, such as User, Company, Car, Receipt and whatnot. And then you create a service for each.</p>
+<p>Splitting like this, by itself, is likely to <strong>get you into a distributed monolith</strong> scenario.</p>
+<p>Probably, each service has a database where it creates, reads, updates and deletes the entities they&apos;re in charge of managing, with all their fields. (This database may be shared among services, introducing even more coupling between them.)</p>
+<p>The thing is, business logic tends to affect a lot of entities. For anything that needs to happen, you&apos;ll end up doing lots of requests to lots of services. Things get even worse if you need anything like a <em>join</em>: for example, retrieve a list of Users with their Companies.</p>
+<p>Furthermore, the logic will be moving around lots of data it&apos;s not actually interested in. A single operation interacts with only a subset of that data. And data that &quot;belongs to&quot; an entity (<em>fields</em>) tends to accrue over time.</p>
+<h3 id="operation-oriented">Operation-oriented</h3>
+<p>If we shift our approach to <strong>&quot;what we want to do with the data?&quot;</strong>, things get much better.</p>
+<p>With this approach, the data that is kept together is the data that <em>an operation</em>, or a bunch of closely-related operations, needs to use.</p>
+<p>The services are then in charge of those operations, and rarely have to talk directly to other services, except to perform other <em>operations</em> as opposed to just to access some data.</p>
+<p>This usually means that you no longer have a single, cohesive User, Company or Car in a database somewhere. Instead, the data about an entity is distributed, maybe duplicated, in several databases.</p>
+<p>This also makes it easier to <strong>assign appropriate resources</strong> to each operation. Some fields of an entity may be updated several times per second, while others are updated very unusually or never. Maybe some operation is only concerned with data that is active right now (for example, a delivery tracking service of some sort), and thus it only needs small database for it without much partitioning, while another service deals with past data with a more appropriate database.</p>
+<p>As always, those are <strong>general rules</strong> that shouldn&apos;t be applied blindly. Both entity-oriented and operation-oriented can be mixed up, depending on the use case. Having data about a single entity in several places <strong>presents challenges</strong> that the entity-oriented approach doesn&apos;t.</p>
+<h3 id="criticality-oriented">Criticality-oriented</h3>
+<p>Another criteria to consider is: <strong>&quot;how important is to keep this service up?&quot;</strong>.</p>
+<p>Separating services by how critical they are makes it easier to focus resources on them.</p>
+<h2 id="getting-data-youre-interested-in-through-events">Getting data you&apos;re interested in through events</h2>
+<p>With a entity-oriented responsibility segregation, it&apos;s obvious how to get the data you need for an operation: you go to the entity&apos;s service, which holds all its data. But once you go the operation-oriented route, the data you&apos;re interested in may have been produced in any other operation-oriented service. How do you get access to it?</p>
+<p>If every <strong>service that produces</strong> data (and updates to data) <strong>sends events</strong>, then every service interested in that data can <strong>listen to those events</strong>, take exactly what they want, and <strong>save that in their own database</strong>, in order to later do something with them when requested.</p>
+<p>Consider the delivery tracking example from above. Say you have the following use cases:</p>
+<ul>
+<li>A customer orders a delivery for a package with some dimensions and weight.</li>
+<li>A route through logistic centers is decided for every delivery.</li>
+<li>When a delivery reaches a logistic center or something, an operator scans it and a time and place update takes place.</li>
+<li>Logistic centers need to be paid for every package they handle, daily. Heavier and bigger packages cost more.</li>
+<li>Finally, the customer is charged money based on how long it took the package to reach the destination. (Faster is more expensive!)</li>
+<li>The customer can see the list of deliveries it has made in the past.</li>
+</ul>
+<p>We can create services for each one of those operations, and have them communicate through events.</p>
+<ul>
+<li>When a customer orders a delivery, a service validates it and emits a <code>DeliveryOrdered</code> event, by putting it in a message queue.</li>
+<li>Another service, let&apos;s call it <code>delivery-router</code>, consumes <code>DeliveryOrdered</code> events, and, based on its origin and destination, goes through the list of available logistic centers to calculate a route, and then emits a <code>DeliveryAssignedRoute</code> event.</li>
+<li>Whenever somebody from the delivery company adds, updates or removes a logistic center, a <code>LogisticCenterUpdated</code> event is emitted. <code>delivery-routes</code> consumes such events, to keep its list of logistic centers updated. This events comes with lots of data about the logistic center (name of the company that operates it, tariffs, etc.), so <code>delivery-routes</code> only stores the relevant data: its location, maybe which kind of packages they can handle, etc.</li>
+<li>Another service listens for <code>DeliveryAssignedRoute</code> events and notifies logistic centers about an incoming package.</li>
+<li>When an operator in a logistic center scans a package, a service handles that, validates it and sends a <code>DeliveryReachedLogisticCenter</code> event with the logistic center ID, the delivery ID, and the time.</li>
+<li>Another service listens for <code>DeliveryReachedLogisticCenter</code> to decide how much it should pay a logistic center for a delivery. For this, it also needs the center&apos;s tariffs and the package&apos;s dimensions, so it also listens for<code>LogisticCenterUpdated</code> and <code>DeliveryOrdered</code> events, taking the data it needs.</li>
+<li>The service that charges customers listens to <code>DeliveryOrdered</code>, (to know when a delivery starts), <code>DeliveryAssignedRoute</code> (to know which logistic center is the last) and <code>DeliveryReachedLogisticCenter</code> (to know when the last logistic center is reached). It then emits an invoice, and maybe calls an external service to do the payment. It emits a <code>DeliveryCharged</code> event.</li>
+<li>Another service listens to all this, integrates the information, and arranges it so that it can be inspected later by customers in a web page.</li>
+</ul>
+<h2 id="data-consistency-in-times-of-microservices">Data consistency in times of microservices</h2>
+<p>The operation-oriented, event-based approach comes with a cost: events are often <strong>delivered asynchronously</strong>, so have to be very careful about how we handle events.</p>
+<p>This often means that what is true in one service is not true in another service... yet. It will be in the future, when events propagate the data to all affected services. This is called <em>eventual consistency</em>. We must be careful to know how this affects our operations, and where we can and can&apos;t afford it.</p>
+<p>For example, in order to validate a money transfer, we need to know the balance of the user&apos;s account <em>right now</em>. We can&apos;t afford the service that handles that to base that decision on old data.</p>
+<h3 id="event-sourcing">Event sourcing</h3>
+<p>It is often desirable to have a <em>single source of truth</em>. When data is denormalized, we can get into a situation in which different versions of it contradict each other.</p>
+<p>Data, ultimately, derives from events that create, update and delete it. Those events are unique, immutable, and either ordered by causal relationships or independent from each other, as we&apos;ve seen.</p>
+<p>If we store such events somewhere, we can later <em>reconstruct</em> the data they&apos;re supposed to produce. If a service becomes out-of-sync with the events as they happen due to some problem, we can &quot;replay&quot; those events from the events storage to regenerate a consistent view of the resulting data.</p>
+<p>This technique is called <em>event sourcing</em>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-doing-things-later.html" class="navigation navigation-prev " aria-label="Previous page: Doing things later">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../003-backends-in-the-wild/" class="navigation navigation-next " aria-label="Next page: Backends in the wild">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Operation-oriented databases","level":"1.3.4","depth":2,"next":{"title":"Backends in the wild","level":"1.4","depth":1,"path":"003-backends-in-the-wild/README.md","ref":"003-backends-in-the-wild/README.md","articles":[{"title":"Computers disappear","level":"1.4.1","depth":2,"path":"003-backends-in-the-wild/01-computers-disappear.md","ref":"003-backends-in-the-wild/01-computers-disappear.md","articles":[]},{"title":"Deploying","level":"1.4.2","depth":2,"path":"003-backends-in-the-wild/02-deploying.md","ref":"003-backends-in-the-wild/02-deploying.md","articles":[]},{"title":"Memory isn't infinite","level":"1.4.3","depth":2,"path":"003-backends-in-the-wild/03-memory-isnt-infinite.md","ref":"003-backends-in-the-wild/03-memory-isnt-infinite.md","articles":[]},{"title":"Observability","level":"1.4.4","depth":2,"path":"003-backends-in-the-wild/06-observability.md","ref":"003-backends-in-the-wild/06-observability.md","articles":[]}]},"previous":{"title":"Doing things later","level":"1.3.3","depth":2,"path":"002-distributed-data/03-doing-things-later.md","ref":"002-distributed-data/03-doing-things-later.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"002-distributed-data/04-operation-oriented-databases.md","mtime":"2022-04-29T07:27:32.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

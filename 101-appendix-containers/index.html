@@ -1,0 +1,624 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Containers · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../102-appendix-good-practices/" />
+    
+    
+    <link rel="prev" href="../003-backends-in-the-wild/06-observability.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Containers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="containers">Containers</h1>
+<p>We are going to take advantage of the container technology for this bootcamp, so we&apos;re going to explain briefly what they are and how to use them.</p>
+<p>Modern operating systems allow to have multiple user-space instances, that look like real computers from the point of view of programs running in them. The difference between a program running in an ordinary operating system and a program running in a container is that the latter can only see a subset of the resources that are visible for the former, those assigned to the container.</p>
+<p>For the bootcamp, we are mostly interested in the flexibility that containers offer. Since each container behaves as it&apos;s a different computer, we can simulate a complete distributed system locally, in our own computers.</p>
+<h2 id="docker">Docker</h2>
+<p>Docker is one of the best known container system available and is the one we will use during the bootcamp.
+A docker system is composed of a daemon (<code>dockerd</code>) and a client (<code>docker</code>). The client communicates with the daemon that listens for commands. We will always interact through the client.</p>
+<p>Docker manages several different entities, we are interested in just two:</p>
+<ul>
+<li>A docker image, a template used to build docker containers.</li>
+<li>A docker container, which uses a docker image to build the actual isolated environment and run the applications.</li>
+<li>A docker registry, which is a (local or remote) repository for docker images.</li>
+</ul>
+<p>The usual workflow while working with docker is:</p>
+<ul>
+<li>Create an image or get one from a docker registry</li>
+<li>Run a container based on the image</li>
+<li>Stop the container</li>
+</ul>
+<h3 id="image-creation">Image creation</h3>
+<p>To create an image first we have to define it.
+This is usually done in a <code>Dockerfile</code> file.
+Here we can see an example of a simple node application image:</p>
+<pre><code class="lang-docker"><span class="hljs-keyword">FROM</span> node:latest
+<span class="hljs-keyword">ADD</span> <span class="bash">. /app
+</span><span class="hljs-keyword">WORKDIR</span> <span class="bash">/app
+</span><span class="hljs-keyword">RUN</span> <span class="bash">npm install
+</span><span class="hljs-keyword">CMD</span> <span class="bash">[<span class="hljs-string">&quot;node&quot;</span>, <span class="hljs-string">&quot;index.js&quot;</span>]
+</span></code></pre>
+<p>Now we can build the image with:</p>
+<pre><code class="lang-sh">$ docker build -t myapp:latest .
+</code></pre>
+<p><code>myapp</code> is the name we <em>tag</em> the image with. This will be used to run a container based on this image.</p>
+<p>You can see the available images with:</p>
+<pre><code class="lang-sh">$ docker images
+</code></pre>
+<h3 id="run-a-container">Run a container</h3>
+<p>You can run a container either using your own image as explained in the previous section, or some image available in some docker registry.
+For example, the command to run a container based on the image built previously would be:</p>
+<pre><code class="lang-sh">$ docker run myapp
+</code></pre>
+<p>To run a container publicly available in a docker registry (for example, a mongodb image):</p>
+<pre><code class="lang-sh">$ docker run mongo
+</code></pre>
+<p>In this case, the docker command does two different things:</p>
+<ul>
+<li>Download the image</li>
+<li>Run the container built from this image</li>
+</ul>
+<p>The first step can also be done separately with:</p>
+<pre><code class="lang-sh">$ docker pull mongo
+</code></pre>
+<h2 id="docker-compose">Docker compose</h2>
+<p>Docker provides an easy way to build, share and run containers, which is great.
+But we are building distributed systems, and having to run each container manually becomes tedious fast.</p>
+<p>There are several ways to approach such problem, we&apos;ll go with docker compose.
+Docker compose is a tool to define an run multi-container applications and will allow us to build the systems we will use in the exercises locally quite easily.</p>
+<p>To define such multi-container system, a configuration file, in YAML format, is used.
+The configuration file for the first exercise is as follows:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">version:</span> <span class="hljs-string">&apos;3&apos;</span>
+<span class="hljs-attr">services:</span>
+<span class="hljs-attr">  exercise1:</span>
+<span class="hljs-attr">    build:</span> .
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">&quot;9001:9001&quot;</span>
+<span class="hljs-attr">  messageapp:</span>
+<span class="hljs-attr">    image:</span> <span class="hljs-string">&quot;cabify/backend-bootcamp-messageapp:latest&quot;</span>
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">&quot;3000:3000&quot;</span>
+</code></pre>
+<p>The configuration file is composed of:</p>
+<ul>
+<li>A configuration format version in the first line</li>
+<li>Containers definition in the rest of the file. There are two services:<ul>
+<li>exercise1: A container that is built using the image described in <code>Dockerfile</code> in our current directory and will listen in port 9000.</li>
+<li>messageapp: A container that is built using the image tagged with <code>cabify/backend-bootcamp-messageapp:latest</code> (which may be available either locally or in a docker registry), which will listen in port 3000.</li>
+</ul>
+</li>
+</ul>
+<p>This is just the basics of how to configure a multiple container system with docker compose, but it should give a quick overview of the idea. Check the references for more information.</p>
+<p>Now, we just need to build the system we have just described:</p>
+<pre><code class="lang-sh">$ docker-compose build
+</code></pre>
+<p>and run it:</p>
+<pre><code class="lang-sh">$ docker-compose run
+</code></pre>
+<p>This will launch both services in containers as defined above.</p>
+<h2 id="references">References</h2>
+<p>We have only covered the basics of containers, docker and docker compose.
+You can take a look to the following resources for further information:</p>
+<ul>
+<li><a href="https://docs.docker.com/get-started/" target="_blank">Docker Get Started</a>.
+The firt 3 steps cover the same material seen here in more detail:
+docker concepts and setup, buiding an example app with docker, and buiding a multi-container system with docker compose.</li>
+<li><a href="https://docs.docker.com/" target="_blank">Docker documentation</a> The official docker documentation site.</li>
+<li><a href="https://github.com/Friz-zy/awesome-linux-containers" target="_blank">Awesome Linux Containers</a> A big catalog with further resources.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../003-backends-in-the-wild/06-observability.html" class="navigation navigation-prev " aria-label="Previous page: Observability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../102-appendix-good-practices/" class="navigation navigation-next " aria-label="Next page: Good Practices">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Containers","level":"1.5","depth":1,"next":{"title":"Good Practices","level":"1.6","depth":1,"path":"102-appendix-good-practices/README.md","ref":"102-appendix-good-practices/README.md","articles":[{"title":"General Good Practices","level":"1.6.1","depth":2,"path":"102-appendix-good-practices/01-general-practices.md","ref":"102-appendix-good-practices/01-general-practices.md","articles":[]},{"title":"Design Good Practices","level":"1.6.2","depth":2,"path":"102-appendix-good-practices/02-design-practices.md","ref":"102-appendix-good-practices/02-design-practices.md","articles":[]},{"title":"Polymorphism and Abstract Types","level":"1.6.3","depth":2,"path":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","ref":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","articles":[]}]},"previous":{"title":"Observability","level":"1.4.4","depth":2,"path":"003-backends-in-the-wild/06-observability.md","ref":"003-backends-in-the-wild/06-observability.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"101-appendix-containers/README.md","mtime":"2022-04-29T07:27:32.089Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

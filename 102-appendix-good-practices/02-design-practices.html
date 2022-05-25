@@ -1,0 +1,715 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Design Good Practices · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="99-polymorphism-and-abstract-types.html" />
+    
+    
+    <link rel="prev" href="01-general-practices.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="01-general-practices.html">
+            
+                <a href="01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="02-design-practices.html">
+            
+                <a href="02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="99-polymorphism-and-abstract-types.html">
+            
+                <a href="99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Design Good Practices</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="design-good-practices">Design Good Practices</h1>
+<p>At the beginning, every software project is a masterpiece. Everything is simple, clean, concise, elegant. But then the time passes, and the software start to rot. It&apos;s a progressive process: an ugly part here, a little hack there. And over time the rotting continues until our beautiful codebase becomes a mess that the developers find increasingly hard to maintain. Eventually, the effort required to make the simplest of changes to the software becomes so high that the engineers cry for a full rewrite (likely using microservices :-) ).</p>
+<h2 id="symptoms-of-rotten-software">Symptoms of rotten software</h2>
+<p>But, how do we detect our codebase is rotting? There are four symptoms that could help to detect it.</p>
+<ul>
+<li><p><strong>Rigidity</strong>. The tendency of the software to be difficult to change. Every single change causes a cascade of changes in other parts of the code (dependencies). What seemed to be a two days change becomes several weeks of work. This derives in unhappy managers, who in degenerate cases reduce the changes to critical fixes only. The software stops adding new value to the business. And the product collapses.</p>
+</li>
+<li><p><strong>Fragility</strong>. The tendency of the software to break upon changes. Very often, changes that have nothing to do with the part that brokes. Managers are afraid to make changes, so they limit them as they do before rigidity. Again, in degenerated cases we stop adding new value, and the product collapses.</p>
+</li>
+<li><p><strong>Immobility</strong>. The inability to reuse software fragments. When one programmer detects he needs a module that is similar to one that other programmer wrote. However, the module to be reused is tangled with its dependencies, and the cost of separating things is too great. And the module is simply rewritten.</p>
+</li>
+<li><p><strong>Viscosity</strong>. The tendency of the software to make it difficult to preserve the design, stimulating the programmer to make hacks instead. In other words, it&apos;s easy to do the wrong thing, but hard to do the right thing. This is something that applies not only to the code but also to the development environment: build systems, testing frameworks, service configuration, etc.</p>
+</li>
+</ul>
+<h2 id="causes-of-rotten-software">Causes of rotten software</h2>
+<p>There is one simple root cause for our beloved software to degrade: <strong>changing requirements</strong>. That&apos;s essentially why our codebase starts as a clean, elegant solution. Not only because it is small, but also because we start defining our architecture based on clear requirements. So we make a design that does the job really well. But, the sooner or later the requirements will change. And the software will have to give response to things it was not designed for.</p>
+<p>We cannot expect the requirements not to change. This is a essential part of software <strong>development</strong>. What we have to do is to find a way to make our designs resilient to changes. But, what kind of changes could degrade our designs so much? Simple: those that introduce new and unplanned dependencies. Each of the four symptoms described above is either directly or indirectly caused by improper dependencies between the modules of our software. We have to manage the dependencies to prevent they propagate. We need <strong>dependency firewalls</strong>.</p>
+<h2 id="solid-principles">SOLID Principles</h2>
+<p>There are five well-known principles in Object Oriented Programming (but most of them applicable to other programming paradigms) that could be followed in order to manage module dependencies. We will analyze them in detail in the reminder of this appendix.</p>
+<h3 id="s-single-responsibility-principle-srp">S: Single Responsibility Principle (SRP)</h3>
+<p><em>Each software module should have one and only one reason to change.</em></p>
+<p>This is another formulation of the principles of cohesion and coupling: gather together the things that change for the same reasons. Separate those things that change for different reasons. That&apos;s exactly the meaning of <em>one reason to change</em>. If there are more than one business logic coded in a module, we will have more than one single person (or business unit) requesting changes in that module. As consequence, the changes requested by one person could impact the business logic under the responsibility of another one: introducing new bugs, changing the behavior unexpectedly, affecting the performance, etc.</p>
+<p>Let&apos;s see an example. Consider a module that generates and prints a finantial report. If we think about it, we could distinguish two different reasons to change, as:</p>
+<ul>
+<li>Change what are the contents of the report. We might want to add a new item that tells how much we invested in floppy disks in the last month.</li>
+<li>Change how this report is printed. We might want to generate a PDF output instead of the HTML one we had so far.</li>
+</ul>
+<p>The SRP says that these two aspects of the problem are really two separate responsibilities, and should therefore be in separate modules.</p>
+<h3 id="o-open-closed-principle-ocp">O: Open Closed Principle (OCP)</h3>
+<p><em>A module should be open for extension but closed for modification.</em></p>
+<p>It means simply this: we should write our modules so that they can be extended, without requiring them to be modified. In other words, we want to be able to change what the modules do, without changing the source code of the modules.</p>
+<p>An essential way to achieve this is creating <strong>abstractions</strong>. In Object Oriented Programming, we can define abstract classes or interfaces that define the contract of the module. The code that depends in such module will depend in these abstract classes or interfaces, and not in the implementations. If we need to extend the module, it&apos;s as simple as adding new classes that implements the abstract class or interface to the module. That requires no change in any existing code. Neither in our module, neither in others that depends on it.</p>
+<blockquote>
+<p>If you are not familiar with terms like interace of abstract class, you can read <a href="99-polymorphism-and-abstract-types.html">this introduction to polymorphism and abstract types</a>.</p>
+</blockquote>
+<p>Let&apos;s see this with an example. Let&apos;s assume we have a web application that have to authenticate an HTTP request to ensure it contains a valid username and password. We put all the code that does the authentication in a function <code>authorize(user, password)</code> that, given a user and a password, indicates whether that user is authenticated. Internally, this funcion queries the DB to look for that user and check if the password matches.</p>
+<p>This design is not following OCP. If we want to add a new way to authenticate users (e.g., LDAP, OAuth, etc), we will have to change most of the code in the <code>authorize</code> function. A nice way to follow OCP would be to define a <code>AuthenticationProvider</code> abstract class.</p>
+<div class="mermaid">
+graph TD
+  AP[&quot;<center>&#xAB;interface&#xBB;</center><center>AuthenticationProvider</center>----------------------------------<br>+ authorize(user, password)&quot;]
+
+  RequestHandler --&gt; AP
+  AP-. implements .-DbAuthenticationProvider
+  AP-. implements .-LdapAuthenticationProvider
+  AP-. implements .-OauthAuthenticationProvider
+  AP-. implements .-More[...]
+
+  style LdapAuthenticationProvider fill:#afa;
+  style OauthAuthenticationProvider fill:#afa;
+  style More fill:#afa;
+</div>
+
+<p>This provides an abstract method <code>authorize(user, password)</code>.  Our request handlers would have access to an instance of <code>AuthenticationProvider</code>, so they only have to invoke <code>authorize</code> and forget about the details of how it is implemented. Initially, we would provide a <code>DbAuthenticationProvider</code> class that implements the interface defined by <code>AuthenticationProvider</code>. If we want to add more authentication methods, we would add new classes to the design: <code>LdapAuthenticationProvider</code>, <code>OAuthAuthenticationProvider</code>, etc, without changing a single line of code in <code>auth</code> module.</p>
+<h3 id="l-liskov-substitution-principle-lsp">L: Liskov Substitution Principle (LSP)</h3>
+<p><em>Subclasses should be substitutable for their base classes.</em></p>
+<p>The concept is simple. Derived classes should be substitutable for their base classes. That is, a user of a base class should continue to
+function properly if a derivative of that base class is passed to it. This may seem obvious, but there are subtleties that need to be considered. The canonical example is the Circle/Ellipse dilemma.</p>
+<p>Most of us learn, in high school math, that a circle is just a degenerate form of an ellipse. All circles are ellipses with coincident foci. So we can have a definition of ellipse as:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ellipse</span> </span>{
+  <span class="hljs-keyword">constructor</span>(focusA, focusB, radius) {
+    <span class="hljs-keyword">this</span>.focusA = focusA;
+    <span class="hljs-keyword">this</span>.focusB = focusB;
+    <span class="hljs-keyword">this</span>.radius = radius;
+  }
+
+  get focusA() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.focusA; }
+  get focusB() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.focusB; }
+  get radius() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.radius; }
+
+  set focusA(val) { <span class="hljs-keyword">this</span>.focusA = val; }
+  set focusB(val) { <span class="hljs-keyword">this</span>.focusB = val; }
+  set radius(val) { <span class="hljs-keyword">this</span>.radius = val; }
+
+  area() {
+    <span class="hljs-keyword">return</span> ...;
+  }
+}
+</code></pre>
+<p>A ellipse is a pair of foci points and a radius. We provide some getters and setters, and a method to calculat its area from the properties. Now, we can define the circle as:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Ellipse</span> </span>{
+  <span class="hljs-keyword">constructor</span>(center, radius) {
+    <span class="hljs-keyword">super</span>(center, center, radius);
+  }
+
+  set focusA(val) {
+    <span class="hljs-keyword">this</span>.focusA = val;
+    <span class="hljs-keyword">this</span>.focusB = val;
+  }
+  set focusB(val) {
+    <span class="hljs-keyword">this</span>.focusA = val;
+    <span class="hljs-keyword">this</span>.focusB = val;
+  }
+}
+</code></pre>
+<p>What we do here is to request just the center of the circle and the radius in the constructor. In other words, the single focus point we will have. We pass it from the constructor as both <code>focusA</code> and <code>focusB</code> constructor arguments, so both foci are the same. We also override some methods to satisfy both foci are always the same.</p>
+<p>Perfect! We did it. We have a circle definition that reuses the ellipse definition with subtyping. Now let&apos;s check whether it satisfies LSP:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">void</span> func(ellipse) {
+  <span class="hljs-keyword">let</span> a = Point(<span class="hljs-number">-1</span>,<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">let</span> b = Point(<span class="hljs-number">1</span>,<span class="hljs-number">0</span>);
+  ellipse.focusA = a
+  ellipse.focusB = b
+  assert(ellipse.focusA == a);
+  assert(ellipse.focusB == b);
+}
+</code></pre>
+<p>If we invoke <code>func()</code> with an instance of <code>Ellipse</code> class, the code works fine. We set the foci, and check they are still there. But if we invoke it with an instance of <code>Circle</code>, the code doesn&apos;t work. The call to the <code>focusB</code> setter also writes <code>focusA</code> property, so <code>ellipse.focusA == a</code> is not met anymore. Even though we defined a subtype relationship between <code>Ellipse</code> and <code>Circle</code>, the instances of the latter cannot be used where instances of the former are expected. We are not fully satisfying the contract. More precisely, the post-conditions of the setters are not met.</p>
+<h3 id="i-interface-segregation-principle-isp">I: Interface Segregation Principle (ISP)</h3>
+<p><em>Many client specific interfaces are better than one general purpose interface.</em></p>
+<p>The essence of the principle is quite simple. If you have a class that has several clients, rather than loading the class with all the methods that the clients need, create specific interfaces for each client and multiply inherit them into the class.</p>
+<div class="mermaid">
+graph LR
+  ClientA[Client A] --&gt; Service
+  ClientB[Client B] --&gt; Service
+  ClientC[Client C] --&gt; Service
+</div>
+
+<p>Let&apos;s say we have a class with many clients, and one large interface to serve them all. Note that whenever a change is made to one of the methods that one client calls, the rest of clients may be affected.</p>
+<div class="mermaid">
+graph LR
+  ClientA[Client A] --&gt; ServiceA[&quot;&#xAB;interface&#xBB;<br>Service A&quot;]
+  ClientB[Client B] --&gt; ServiceB[&quot;&#xAB;interface&#xBB;<br>Service B&quot;]
+  ClientC[Client C] --&gt; ServiceC[&quot;&#xAB;interface&#xBB;<br>Service C&quot;]
+
+  ServiceA-. implements .-Service
+  ServiceB-. implements .-Service
+  ServiceC-. implements .-Service
+</div>
+
+<p>A better technique is to have the methods needed by each client placed in special interfaces that are specific to that client. Those interfaces are multiply inherited by the implementing class.</p>
+<h3 id="d-dependency-inversion-principle-dip">D: Dependency Inversion Principle (DIP)</h3>
+<p><em>Depend upon Abstractions. Do not depend upon concretions.</em></p>
+<p>Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes, rather than upon concrete functions and classes. In fact, we already discussed about this and we saw an example in OCP.</p>
+<p>We use to make software following a top-down design that exhibits a particular kind of dependency structure. High level modules depend upon lower level modules, which depend upon yet lower level modules, etc. For example, in a web application, the path router depends on the page controllers. The page controllers depend on services. The services depend on repositories. The repositories depend on DB clients. And so on. That&apos;s actually the direction of the function calls in runtime.</p>
+<div class="mermaid">
+graph TD
+  PathRouter --&gt; IndexController
+  PathRouter --&gt; LoginController
+  PathRouter --&gt; ProductController
+
+  IndexController --&gt; other1[...]
+  LoginController --&gt; LoginService
+  LoginController --&gt; AnalyticsService
+  ProductController --&gt; other2[...]
+
+  LoginService --&gt; UsersRepository
+  AnalyticsService --&gt; other3[...]
+  UsersRepository --&gt; MySQLClient
+</div>
+
+<p>Thanks to object oriented programming techniques, we can revert the direction of the dependencies by introducing abstract classes or interfaces in the design.</p>
+<div class="mermaid">
+graph TD
+  PathRouter --&gt; Controller[&quot;&#xAB;interface&#xBB;<br>Controller&quot;]
+  IndexController --&gt; other1[...]
+  Controller-. implements .-IndexController
+  Controller-. implements .-LoginController
+  Controller-. implements .-ProductController
+
+  LoginController --&gt; LoginService[&quot;&#xAB;interface&#xBB;<br>LoginService&quot;]
+  LoginController --&gt; AnalyticsService[&quot;&#xAB;interface&#xBB;<br>AnalyticsService&quot;]
+  LoginService-. implements .-DefaultLoginService
+  AnalyticsService-. implements .-GoogleAnalyticsService
+
+  DefaultLoginService --&gt; UserRepository[&quot;&#xAB;interface&#xBB;<br>UserRepository&quot;]
+  UserRepository-. implements .-DbUserRepository
+
+  ProductController --&gt; other2[...]
+  GoogleAnalyticsService --&gt; other3[...]
+</div>
+
+<p>Thanks to this, we can see that some modules like <code>LoginController</code> depends exclusively on abstract classes <code>LoginService</code> and <code>AnalyticsService</code>. So any other dependency carried by the implementations is not propagated to <code>LoginController</code> (the dependency firewall we discussed above). In fact, what we did is to invert the dependencies. We might expect <code>LoginController</code>, <code>LoginService</code> and <code>AnalyticsService</code> to be declared in the same module <code>controllers.login</code>. And <code>DefaultLoginService</code> implementation class to be declared in a different one: <code>services.login</code>.</p>
+<div class="mermaid">
+graph LR
+  subgraph controllers.login
+    LoginController --&gt; LoginService[&quot;&#xAB;interface&#xBB;<br>LoginService&quot;]
+    LoginController --&gt; AnalyticsService[&quot;&#xAB;interface&#xBB;<br>AnalyticsService&quot;]
+  end
+
+  subgraph services.login
+    LoginService-. implements .-DefaultLoginService
+  end
+
+  subgraph services.analytics
+    AnalyticsService-. implements .-GoogleAnalyticsService
+  end
+</div>
+
+<p>Now the module dependencies go in the reverse direction respect the function calls. The implementations depends on the abstract interfaces they implement. That&apos;s why this is called dependency inversion.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-general-practices.html" class="navigation navigation-prev " aria-label="Previous page: General Good Practices">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="99-polymorphism-and-abstract-types.html" class="navigation navigation-next " aria-label="Next page: Polymorphism and Abstract Types">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Design Good Practices","level":"1.6.2","depth":2,"next":{"title":"Polymorphism and Abstract Types","level":"1.6.3","depth":2,"path":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","ref":"102-appendix-good-practices/99-polymorphism-and-abstract-types.md","articles":[]},"previous":{"title":"General Good Practices","level":"1.6.1","depth":2,"path":"102-appendix-good-practices/01-general-practices.md","ref":"102-appendix-good-practices/01-general-practices.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"102-appendix-good-practices/02-design-practices.md","mtime":"2022-04-29T07:27:32.089Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

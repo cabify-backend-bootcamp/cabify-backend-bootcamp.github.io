@@ -1,0 +1,750 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Doing things later · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-operation-oriented-databases.html" />
+    
+    
+    <link rel="prev" href="02-persistent-state.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01-contradictions.html">
+            
+                <a href="01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02-persistent-state.html">
+            
+                <a href="02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="03-doing-things-later.html">
+            
+                <a href="03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04-operation-oriented-databases.html">
+            
+                <a href="04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Doing things later</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="doing-things-later">Doing things later</h1>
+<h2 id="escaping-the-request">Escaping the request</h2>
+<p>So far, everything we&apos;ve done in our request handlers has been <strong>synchronous</strong>. When we receive a response to a request, we know the operations associated with it have either completed or timed out.</p>
+<p>We&apos;ve seen, however, how database systems support <strong>asynchronous</strong> replication. Because replicating each save to every database replica is expensive and error-prone, the database just acknowledges the save has been written to a single machine, or to a quorum of machines. The caller then just trusts the database system to do its best to replicate the save to all replicas at some point.</p>
+<p>In a similar vein, we can also consider <strong>doing some of the operations</strong> initiated by a request <strong>asynchronously</strong>. That way, part of the work isn&apos;t constrained by the request.</p>
+<p><strong>Code example</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myRequestHandler</span>(<span class="hljs-params">request, response</span>) </span>{
+  <span class="hljs-keyword">let</span> [parameterA, parameterB] = extractParametersFromRequest(request);
+
+  getSomePartialResult(parameterA)
+    .then((partialResult) =&gt; {
+      <span class="hljs-keyword">let</span> processedPartialResult = someProcessing(partialResult);
+
+     <span class="hljs-comment">// Do things in parallel. Synchronous does not mean one thing at a time,</span>
+     <span class="hljs-comment">// it just means waiting for their results before responding.</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all([
+        parallelSubOperationA(processedPartialResult),
+        parallelSubOperationB(processedPartialResult, parameterB),
+      ]);
+    })
+    .then(([parallelResultA, parallelResultB]) =&gt; {
+      <span class="hljs-keyword">let</span> combinedResult = combineParallelResultsSomehow(
+        parallelResultA,
+        parallelResultB,
+      );
+
+      doSomethingElse()
+        .then((somethingElse) =&gt; {
+          <span class="hljs-comment">// Asynchronous!</span>
+          <span class="hljs-comment">// ... do something with somethingElse, maybe...</span>
+        });
+
+      response.respondWith(combinedResult);
+
+      <span class="hljs-comment">// Synchronicity ends _here_! Everything that we&apos;re not sure it has</span>
+      <span class="hljs-comment">// finished at this point is asynchronous.</span>
+      <span class="hljs-comment">// That includes also doSomethingElse(). We _initiated_ it before</span>
+      <span class="hljs-comment">// responding, but we didn&apos;t wait for it to finish.</span>
+
+      doMoreStuff()
+        .then(() =&gt; {
+          <span class="hljs-comment">// Also asynchronous!</span>
+        });
+    });
+};
+</code></pre>
+<h2 id="why-delay-things">Why delay things?</h2>
+<p>Knowing how to do something is easy. Knowing <em>why</em> to do something, and especially <em>when</em> to choose to do so as an alternative to other options, is usually the tricky part.</p>
+<h3 id="async--later">Async != later</h3>
+<p>Let&apos;s first clarify something: doing something asynchronous doesn&apos;t imply doing it <em>later</em>. It just means not waiting for it to be finished. But it may actually finish <em>before</em> we respond to the request, or at a later time; we (from the perspective of the request handler) don&apos;t care.</p>
+<p>So &quot;delay&quot; is not really the word we should be using.</p>
+<h3 id="decouple-the-client-from-a-tasks-completion">Decouple the client from a task&apos;s completion</h3>
+<p>To find out what exactly is the difference between sync and async, let&apos;s reverse the question. <strong>Why <em>not</em></strong> do things asynchronously?</p>
+<p>The answer boils down to simplicity. We <em>could</em> handle every request asynchronously. The response <strong>doesn&apos;t really need to include the result of the operations</strong> the request handler initiated; it could just confirm that they were initiated, and the client could eventually get the feedback in some other way.</p>
+<p>But, in a request-response pattern of communication, we <strong>usually</strong> want the response to <strong>include some result-like</strong> information beyond just &quot;OK, I initiated a series of operations that will finish at some point&quot;. If we do this, then the client is <strong>forced</strong> to retrieve the results of such operations <strong>from somewhere else</strong>.</p>
+<p>So doing things synchronously is a <strong>reasonable default</strong> strategy if we <strong>think the client will be interested</strong> in an informative result. (Even if this result is just that sub-operations finished, successfully or not! Which, as we&apos;ve seen, tells the client whether it should retry the operation.)</p>
+<p>But doing things synchronously imposes something on the client: the client <strong>also needs to wait</strong>. In effect, we tightly <strong>couple</strong> the client process&apos;s <strong>lifetime</strong> with those of all the synchronous operations it performs. The client <strong>can&apos;t make progress until the request is responded</strong>, even if it&apos;s <strong>not really interested</strong> in the result of the operation.</p>
+<p>Doing things asynchronously is <strong>more complex</strong>. We could say that <strong>synchronicity</strong> is a layer of <strong>simplicity sugar</strong> built on top of an event-based asynchronous mess.</p>
+<p>But it also <strong>doesn&apos;t force</strong> the participants in a request&apos;s lifetime (that is, the client and the server that handles the request) into <strong>waiting</strong> for all consequences of a request.</p>
+<p>OK, so we&apos;ve transformed the question into: why and when should we choose the complex decoupling of async over the convenient coupling of sync?</p>
+<h3 id="optimize-differently-for-different-workloads">Optimize differently for different workloads</h3>
+<p>A common use case is to <strong>decouple different kinds of workloads</strong>.</p>
+<p>By keeping <strong>machines specialized</strong> in one kind of task, we can <strong>optimize</strong> it, and the configuration around it, for performing that task.</p>
+<p>A server thet receives requests from an arbitrary number of clients, such as an Internet-facing backend, should be specialized in serving requests. This is challenging enough on itself. If we keep request handling lightweight, we make the job of the backend easier.</p>
+<p>Not having to wait for the tasks it initiates is a net gain for the backend: it means <strong>it can finish handling a request sooner</strong>, which <strong>frees the resources</strong> spent in it sooner.</p>
+<h4 id="distributing-jobs-among-workers">Distributing jobs among workers</h4>
+<p>In the end, though, somebody needs to perform the tasks that the request is meant to initiate. How can we do that? We can use the <strong>job queue</strong> pattern.</p>
+<p>In a job queue, we have the following components:</p>
+<ul>
+<li>The <em>job</em> represents the task to be performed.</li>
+<li>The <em>worker</em> is a process that performs a job.</li>
+<li>The <em>queue</em>, where jobs wait to be performed.</li>
+<li>The processes that put jobs in the queue, usually  request handlers.</li>
+<li>The <em>dispatcher</em> is a process that continuously takes jobs from the queue and assigns them to workers, ensuring that the amount of workers at any given time is bounded. It is usually implemented as some amount of <em>consumer</em> processes that continuously attempt to take a job from the queue, and, if there is one, performs it, thus becoming a worker.</li>
+</ul>
+<div class="mermaid">
+graph TD
+  r1[request] --&gt; queue
+  r2[request] --&gt; queue
+  r3[request] --&gt; queue
+  r4[request] --&gt; queue
+  r5[request] --&gt; queue
+  r6[request] --&gt; queue
+  r7[...] --&gt; queue
+  queue --&gt; dispatcher
+  dispatcher --&gt; w1[worker]
+  dispatcher --&gt; w2[worker]
+  dispatcher --&gt; w3[worker]
+  dispatcher --&gt; w4[worker]
+</div>
+
+<p>This has the following properties:</p>
+<ul>
+<li>The <strong>amount of workers</strong> performing jobs is <strong>bounded</strong> by some number.</li>
+<li>The <strong>amount of active request handlers</strong> is <strong>independent</strong> of the amount of workers.</li>
+<li>The <strong>queue</strong>:<ul>
+<li>Tends to <strong>grow</strong> as there are more <strong>requests</strong>.</li>
+<li>Tends to <strong>shrink</strong> as there are more <strong>consumers</strong>.</li>
+<li>Tends to <strong>shrink</strong> as <strong>workers are faster</strong>.</li>
+</ul>
+</li>
+<li>The <strong>latency</strong> (time from request to completion) of a job is <strong>proportional to the queue</strong> length.</li>
+</ul>
+<p>The challenge, then, becomes preventing the queue from filling up.</p>
+<p><strong>Code example</strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">// jobQueue is a queue in which we will put functions that, when called, do</span>
+<span class="hljs-comment">// some job.</span>
+<span class="hljs-keyword">let</span> jobQueue = [];
+
+<span class="hljs-comment">// consumeFromQueue takes a job from jobQueue, starts it, and when it finishes,</span>
+<span class="hljs-comment">// starts again. Note that it only performs a job at a time.</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">consumeFromQueue</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> startJob = jobQueue.shift(); <span class="hljs-comment">// Dequeue first job.</span>
+
+  <span class="hljs-keyword">if</span> (startJob !== <span class="hljs-literal">undefined</span>) {
+    <span class="hljs-comment">// If there is a job, do it. This then becomes a worker process.</span>
+    startJob()
+      .then(() =&gt; consumeFromQueue()); <span class="hljs-comment">// Consume again!</span>
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// If there isn&apos;t a job, try again asynchronously; next time there might be.</span>
+    setTimeout(consumeFromQueue, <span class="hljs-number">0</span>);
+  }
+}
+
+<span class="hljs-comment">// Start a _fixed_ number of consumers. This means we&apos;ll have a maximum of</span>
+<span class="hljs-comment">// numConsumers jobs underway at any time. This way, we make sure we don&apos;t</span>
+<span class="hljs-comment">// devote too many resources to performing the jobs. The only thing that will</span>
+<span class="hljs-comment">// grow proportionally to the amount of jobs is the length of jobQueue, and the</span>
+<span class="hljs-comment">// time it takes for jobs to be started since they&apos;re added by the request</span>
+<span class="hljs-comment">// handler.</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; numConsumers; i++) {
+  consumeFromQueue();
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myRequestHandler</span>(<span class="hljs-params">request, response</span>) </span>{
+  <span class="hljs-keyword">let</span> parameters = extractParametersFromRequest(request);
+
+  <span class="hljs-comment">// Instead of doing doSlowThing directly, we enqueue it to the jobQueue. If we</span>
+  <span class="hljs-comment">// get lots of requests, we serve each of them quickly, and keep the amount of</span>
+  <span class="hljs-comment">// request handlers small. Instead, jobQueue will grow.</span>
+  jobQueue.push(() =&gt; {
+    <span class="hljs-keyword">return</span> doSlowThing(parameters);
+  });
+
+  response.respondWith(okOrSomethingLikeThat);
+}
+</code></pre>
+<h3 id="move-latency-to-the-background">Move latency to the background</h3>
+<p>This is a common scenario which is related to the previous one.</p>
+<p>Maybe we&apos;re not really worried about the resources an operation may consume, but for some reason or another the <strong>latency</strong> of the operation may <strong>increase</strong>.</p>
+<p>If we do the operation synchronously, then the client is affected by this latency increase. But if we do it asynchronously, someone is affected by this latency, but not the client, or not directly, at least. Thus, we move this latency to the background.</p>
+<h3 id="decouple-backends-from-the-tasks-to-be-performed">Decouple backends from the tasks to be performed</h3>
+<p>What if the backend doesn&apos;t know everything that needs to happen with a request?</p>
+<p>This is a matter of separation of concerns that has more to do with event-based systems than with asynchronicity.</p>
+<h4 id="event-based-system">Event-based system</h4>
+<p>In an event-based system we find three components:</p>
+<ul>
+<li>The <em>events</em>, pieces of data to be transmitted.</li>
+<li>The <em>emitters</em>, processes that <em>emit</em> events.</li>
+<li>The <em>listeners</em>, processes to be activated or created when an event is emitted.</li>
+<li>The <em>dispatcher</em>, the procedure that, whenever an event is emitted, activates or creates listeners and let them access to the event data.</li>
+</ul>
+<p>The advantage of event-based systems is that processes <strong>don&apos;t need to know about every consequence</strong> of a request. When something happens, you can do part of the associated work and then emit an event so that others can do other parts of the work you don&apos;t even know about. Doing more things then becomes a matter of adding more listeners to the event, without even touching the emitter.</p>
+<h4 id="events-and-async">Events and async</h4>
+<p>In theory, the dispatcher can be synchronous: when an event is emitted, the dispatch activates each listener, waits for all of them to finish, and only then the emitter can continue.</p>
+<p>But it&apos;s more usual that the dispatcher is asynchronous. The emitter <strong>emits</strong> the event and <strong>immediately continues</strong> with its work.</p>
+<p>Event-based systems and <strong>async</strong> are a <strong>good match</strong>, because, since the emitter doesn&apos;t know which kind of work the listeners will be performing with the event, it&apos;s also <strong>not interested in their results</strong>, since it doesn&apos;t even know which kind of results they might be.</p>
+<p>An interesting use case for synchronous dispatchers is to notify clients of partial failure in the crash+retry approach to robust systems we&apos;ve studied, but it&apos;s not really usual.</p>
+<h2 id="keeping-things-causal">Keeping things causal</h2>
+<p>Asynchronicity makes it easier to fall into <strong>race conditions</strong>.</p>
+<p>Recall that a race condition occurs when there&apos;s a mismatch between our expectations about how two events can affect each other and the reality. (Here, an event just means something happening.)</p>
+<p>Whenever an event happens after another in the same process, there&apos;s a chance they&apos;re causally related, ie. that the first one affected the second one somehow. If this causality does exist, and we lose track of it, then that&apos;s a bug waiting to bite you.</p>
+<p>Asynchronicity leads itself to race conditions.</p>
+<!-- Example: user adds funds to a bank account, then transfers some money. This is processed asynchronously. If the order of the operations is not preserved, the transfer could fail because of insufficient funds, and then the funds be added. -->
+<!-- Another example: in a chat-like system, some readers might see the answer to a question before the question. -->
+<p>We can keep order in the same way TCP does: by numbering the on the emitter side, so the order can be reconstructed on the listener side.</p>
+<h2 id="from-sync-to-async-and-back-to-sync-again">From sync to async and back to sync again</h2>
+<p>We said before that we can build synchronous systems on top of asynchronous systems. How so?</p>
+<p>If the async operation emits an event when it&apos;s done, the initiator of the operation can first set a listener for such event.</p>
+<p><strong>Code example</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doAsynchronously</span>(<span class="hljs-params">parameter</span>) </span>{
+  doSomethingWithParameter(parameter)
+    .then((result) =&gt; {
+      emit(<span class="hljs-string">&apos;gotResult&apos;</span>, result);
+    });
+}
+
+on(<span class="hljs-string">&apos;gotResult&apos;</span>, (result) =&gt; {
+  doSomethingWithResult(result);
+});
+
+doAsynchronously(<span class="hljs-number">42</span>);
+
+<span class="hljs-comment">// This looks kind of silly in JavaScript, but imagine the event dispatcher, the</span>
+<span class="hljs-comment">// caller of doAsynchronously and the performer of doSomethingWithParameter are</span>
+<span class="hljs-comment">// all on separate machines.</span>
+</code></pre>
+<h2 id="clients-wont-retry-async-operations">Clients won&apos;t retry async operations</h2>
+<p>We&apos;ve seen how letting a single end client retry an operation when it times out or any level of the request handling either times out or crashes.</p>
+<p>But if a client isn&apos;t waiting for acknowledgment of an operation, it&apos;s also not setting a timeout for it. It won&apos;t know if it succeeded or failed, so it can&apos;t retry it.</p>
+<p>If you care that an async operation eventually succeeds, you need to set another kind of monitoring process that retries the operation.</p>
+<h2 id="a-database-for-requests">A database for requests</h2>
+<p>We&apos;ve seen how user-level clients, such as browsers or phones, can&apos;t be trusted to retry failed operations. So how can we put in charge of reliably retrying instead?</p>
+<p>If you can&apos;t afford to get stuck in partial failure, then the very first thing you need to do is to <strong>store the request in a persistent database</strong>.</p>
+<p>This ensures that, if the process crashes afterwards, we don&apos;t forget that, since the user&apos;s client might have forgotten already (remember: it can&apos;t be trusted; state on it is not durable). Then, another process can take over retrying the request by reading this database.</p>
+<p>A kind of database that does all this for you is a <em>message queue</em>, also called <em>message broker</em>.</p>
+<h3 id="async-message-brokers">Async message brokers</h3>
+<p>Message brokers are typically async: the process of <em>publishing</em> a message is decoupled from the process of <em>delivering</em> it to <em>consumers</em>.</p>
+<p>This means that they cannot propagate <em>delivery errors</em> to publishers, since the publishers don&apos;t wait for delivery.</p>
+<h3 id="theres-no-exactly-once">There&apos;s no exactly-once</h3>
+<p>A message queue can ensure that a message will be delivered to consumers:</p>
+<ul>
+<li>At least once.</li>
+<li>At most once.</li>
+</ul>
+<p>We typically would prefer exactly-once delivery, but that&apos;s not possible: once delivered, we don&apos;t know if the consumer has seen it or processed it unless it tells us, so we either wait for confirmation and re-deliver if we don&apos;t get it (at-least-once) or don&apos;t wait for confirmation and risk losing the message (at-most-once, also called fire-and-forget).</p>
+<p>By making message processing idempotent, at-least-once is guaranteed to have the same effects as exactly-once. Yes, this is nothing new.</p>
+<p>Message queues <strong>typically guarantee at-least-once</strong> delivery. They keep messages <strong>stored durable until they have confirmation</strong> that they can safely delete them. If they don&apos;t get such confirmation, they <strong>retry the delivery</strong> until they do.</p>
+<h3 id="handling-a-message--handling-a-request">Handling a message = handling a request</h3>
+<p>For all intents and purposes, handling a message delivery from an at-least-once message queue is the same as serving a request from a client. The message queue is making a request to you, and is expecting an acknowledgment back. You can follow the same <strong>let-it-crash</strong> strategy we&apos;ve discussed in past chapters.</p>
+<h3 id="message-queues-typically-dont-guarantee-ordering">Message queues typically don&apos;t guarantee ordering</h3>
+<p>Some of them guarantee order inside a <em>topic</em> or <em>channel</em>, but not if events come from different channels.</p>
+<p>You typically need to guarantee order yourself to avoid race conditions. If you get an event with a different serial number than you expected, then you just reject it, and let the message queue deliver it again at some later time; maybe at that time you will have processed all previous messages in the right order, and can then process this one.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-persistent-state.html" class="navigation navigation-prev " aria-label="Previous page: Persistent state">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-operation-oriented-databases.html" class="navigation navigation-next " aria-label="Next page: Operation-oriented databases">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Doing things later","level":"1.3.3","depth":2,"next":{"title":"Operation-oriented databases","level":"1.3.4","depth":2,"path":"002-distributed-data/04-operation-oriented-databases.md","ref":"002-distributed-data/04-operation-oriented-databases.md","articles":[]},"previous":{"title":"Persistent state","level":"1.3.2","depth":2,"path":"002-distributed-data/02-persistent-state.md","ref":"002-distributed-data/02-persistent-state.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"002-distributed-data/03-doing-things-later.md","mtime":"2022-04-29T07:27:32.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

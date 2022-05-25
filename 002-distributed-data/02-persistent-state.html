@@ -1,0 +1,807 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Persistent state · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03-doing-things-later.html" />
+    
+    
+    <link rel="prev" href="01-contradictions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../001-programming-a-backend/">
+            
+                <a href="../001-programming-a-backend/">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                <a href="../001-programming-a-backend/01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../001-programming-a-backend/02-serving-an-api.html">
+            
+                <a href="../001-programming-a-backend/02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                <a href="../001-programming-a-backend/03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01-contradictions.html">
+            
+                <a href="01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="02-persistent-state.html">
+            
+                <a href="02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03-doing-things-later.html">
+            
+                <a href="03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04-operation-oriented-databases.html">
+            
+                <a href="04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Persistent state</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="persistent-state">Persistent state</h1>
+<h2 id="how-real-is-our-success-confirmation">How real is our success confirmation?</h2>
+<p>We&apos;ve seen that, when someone asks us to do some operation, either:</p>
+<ul>
+<li>We do it completely and respond with a success confirmation (an <em>acknowledgment</em>, or <em>ack</em>, for short).</li>
+<li>We do it partially (or not at all) and crash.</li>
+</ul>
+<p>From the perspective of the client, we know that we can&apos;t make any assumption about the success of the operation if we don&apos;t get a confirmation response in time.</p>
+<p>But if we do <strong>get an ack, what does it mean, exactly</strong>?</p>
+<p>The <strong>simplistic</strong> assumption to make is that <strong>all consequences</strong> of our request are, at and after that point, <strong>completely and permanently</strong> in effect.</p>
+<p>For instance, I might assume that, after I get confirmation that <code>foo=42</code> has been saved in a database, and nobody else overwrites such save, then every subsequent query for <code>foo</code> to the database will get <code>42</code>.</p>
+<div class="mermaid">
+sequenceDiagram
+  participant c1 as client 1
+  participant db as database
+  participant c2 as client 2
+  participant c3 as client 3
+
+  Note right of db: foo=13
+
+  c2 -&gt;&gt; db: get foo
+  db -&gt;&gt; c2: 13
+
+  c1 -&gt;&gt; db: set foo=42
+  Note right of db: foo=42
+  db -&gt;&gt; c1: ok
+
+  c2 -&gt;&gt; db: get foo
+  db -&gt;&gt; c2: 42
+
+  c3 -&gt;&gt; db: get foo
+  db -&gt;&gt; c3: 42
+
+  c1 -&gt;&gt; db: get foo
+  db -&gt;&gt; c1: 42
+</div>
+
+<p>Sadly, this is <strong>isn&apos;t realistic</strong>.</p>
+<h3 id="when-hard-disks-break">When hard disks break</h3>
+<p>The database is stored in a hard disk somewhere. At some point, this hard disk will stop working.</p>
+<p>In this scenario, it&apos;s obvious that the assumption that we did above doesn&apos;t hold anymore. The acknowledgment that we get from the database just means that subsequent queries <em>probably</em> will get the value we stored. But it can also be lost forever.</p>
+<p>Needless to say, a system that just loses its data from time to time is probably providing a terrible service, depending on our needs.</p>
+<p>So there&apos;s a <strong>tension</strong> between:</p>
+<ul>
+<li>The fact that <strong>disks die</strong>.</li>
+<li>Our preference for acknowledged operation&apos;s <strong>consequences to persist in time</strong>.</li>
+</ul>
+<h2 id="backups">Backups</h2>
+<p>A first step to address the problem of disks dying is to make backups. If a disk dies, then we just swap it by one its backups. (We call this process a <em>failover</em>.)</p>
+<p>Considering just one backup (you probably want more than one):</p>
+<div class="mermaid">
+sequenceDiagram
+  participant c1 as client 1
+  participant db as database
+  participant backup as backup
+  participant c2 as client 2
+
+  Note right of db: Database:<br>foo=13
+  Note right of backup: Backup:<br>foo=13
+
+  c1 -&gt;&gt; db: set foo=42
+  Note right of db: Database:<br>foo=42
+  Note right of backup: Backup:<br>foo=13
+  db -&gt;&gt; c1: ok
+
+  c2 -&gt;&gt; db: get foo
+  db -&gt;&gt; c2: 42
+
+  Note right of db: Backup time!
+  db -&gt;&gt; backup: start backup (somehow)
+  Note right of db: Database:<br>foo=42
+  Note right of backup: Backup:<br>foo=42
+  backup -&gt;&gt; db: ok
+
+  Note right of db: Database is dead! Backup will serve from now on.
+
+  c1 -&gt;&gt; backup: get foo
+  backup -&gt;&gt; c1: 42
+</div>
+
+<p>This is definitely an improvement: in case of failure, we fall back to the last backed up state of the database, not to emptiness.</p>
+<h2 id="continuous-backup-of-changes--replication">Continuous backup of changes = replication</h2>
+<p>Once we&apos;ve decided we&apos;re doing backups, we&apos;re faced with a question: <em>how</em> and <em>when</em> should we make them?</p>
+<p>The simplest way of backing up a database is to just copy all the data at any given time, from time to time.</p>
+<div class="mermaid">
+sequenceDiagram
+  participant clients
+  participant db
+  participant backup
+
+  clients -&gt;&gt; db: foo=42
+  Note right of db: Database:<br>foo=42
+  Note right of backup: Backup:
+  clients -&gt;&gt; db: bar=&quot;baz&quot;
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;
+  Note right of backup: Backup:
+  clients -&gt;&gt; db: qux=13.37
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+  Note right of backup: Backup:
+
+  Note right of db: Backup time!
+
+  db -&gt;&gt; backup: all the data
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+  Note right of backup: Backup:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+
+  clients -&gt;&gt; db: a=123
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+  Note right of backup: Backup:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+  clients -&gt;&gt; db: foo=0
+  Note right of db: Database:<br>foo=0,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+  Note right of backup: Backup:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+
+  Note right of db: Backup time!
+
+  db -&gt;&gt; backup: all the data
+  Note right of db: Database:<br>foo=0,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+  Note right of backup: Backup:<br>foo=0,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+</div>
+
+<p>However, it&apos;s easy to see this way is not ideal:</p>
+<ul>
+<li>It&apos;s probably <strong>not very efficient</strong>. Lots of data won&apos;t have changed between a backup and the next, so copying the same data again is a waste of resources.</li>
+<li>It introduces a <strong>lengthy period of inconsistency</strong> between a backup and the next. If the database fails during that interval, we&apos;ll fall back to data that can be badly outdated.</li>
+</ul>
+<p>What should we do instead? We can emit an event <strong>with each change</strong> that is processed <strong>as soon as possible</strong>. Instead of copying the data, we <strong>copy the events that change the data</strong>.</p>
+<p>This is what we usually understand by <em>replication</em>. The &quot;backup&quot; databases are then called <em>replicas</em> or <em>secondary</em> (or <em>slaves</em>, which is failing into disuse), while the database that accepts write requests is called <em>leader</em> or <em>primary</em> (or <em>master</em>, which is also falling into disuse).</p>
+<div class="mermaid">
+sequenceDiagram
+  participant clients
+  participant db
+  participant backup
+
+  clients -&gt;&gt; db: foo=42
+  Note right of db: Database:<br>foo=42
+  db -&gt;&gt; backup: foo=42
+  Note right of backup: Backup:<br>foo=42
+  clients -&gt;&gt; db: bar=&quot;baz&quot;
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;
+  db -&gt;&gt; backup: bar=&quot;baz&quot;
+  Note right of backup: Backup:<br>foo=42,<br>bar=&quot;baz&quot;
+  clients -&gt;&gt; db: qux=13.37
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+  db -&gt;&gt; backup: qux=13.37
+  Note right of backup: Backup:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37
+  clients -&gt;&gt; db: a=123
+  Note right of db: Database:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+  db -&gt;&gt; backup: a=123
+  Note right of backup: Backup:<br>foo=42,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+  clients -&gt;&gt; db: foo=0
+  Note right of db: Database:<br>foo=0,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+  db -&gt;&gt; backup: foo=0
+  Note right of backup: Backup:<br>foo=0,<br>bar=&quot;baz&quot;,<br>qux=13.37,<br>a=123
+</div>
+
+<h2 id="sync-vs-async">Sync vs. async</h2>
+<p>In the last chapter, we saw that two concurrent processes can collaborate by <strong>synchronizing</strong>, that is, establishing a point of communication after which they can safely set causal relationships between their new events and the other process&apos;s older events.</p>
+<p>In simpler words, you let another process see some of the data that your events produced, so that it can do something with that data.</p>
+<p>A <strong>request</strong> and its <strong>response</strong> establish a <strong>window of synchronicity</strong> between the participants:</p>
+<ul>
+<li>The request carries <strong>data from the client to the server</strong>.</li>
+<li>The response, at the very least, signals to the client that <strong>the server did something with that data</strong>.</li>
+</ul>
+<p>Those are two synchronization events: the request can do things as a consequence of what happened on the client, and then, the client can do things as a consequence of the server having processed its request.</p>
+<p><img src="02-persisted-state-request-response-causality-diagram.png" alt="Diagram of request-response causality. A request synchronizes concurrent processes"></p>
+<p>With this in mind, we can categorize the events that happen while handling a request (that is, in the server, between a request is received and its response is sent) as:</p>
+<ul>
+<li><strong>Synchronous</strong>: The event happens in this window, <strong>before the response is sent</strong>.</li>
+<li><strong>Asynchronous</strong>: Not synchronous. The event happens <strong>concurrently</strong> with the window: it may happen <strong>before or after the response is sent</strong>.</li>
+</ul>
+<p>This is a useful distinction to which we will return in future chapters.</p>
+<p>To consider a <strong>operation</strong> carried out as part of processing the request to be <strong>synchronous</strong> means that the server <strong>waits for its completion</strong> (either as an ack, or as a timeout) before responding to the client.</p>
+<p>On the other hand, an <strong>asynchronous operation</strong> may be initiated inside the request handler, but it is not waited for completion before responding.</p>
+<p>As often, there&apos;s no <em>right</em> way to do things; both doing things synchronously or asynchronously have their advantages.</p>
+<h2 id="replication-strategies">Replication strategies</h2>
+<h3 id="synchronous-replication">Synchronous replication</h3>
+<p>Synchronous replication means that we don&apos;t acknowledge a save to the database as successful until saves to <strong>all the replicas</strong> are acknowledged as successful too.</p>
+<p>This is useful because then, if a failover occurs, we&apos;re sure that we <strong>won&apos;t see an outdated version</strong> of the data, ie. a version that was overwritten at some point in the past by a successfully acknowledged write to the database.</p>
+<p>Remember the assumption we used above?</p>
+<blockquote>
+<p>For instance, I might assume that, after I get confirmation that <code>foo=42</code> has been saved in a database, and nobody else overwrites such save, then every subsequent query for <code>foo</code> to the database will get <code>42</code>.</p>
+</blockquote>
+<p>Under synchronous replication, this holds while there&apos;s at least one replica of the data accessible somewhere. As it is extremely unlikely that all replicas are dead at any given time, this strategy basically makes writes unforgettable, so it makes this assumption reasonable.</p>
+<p>This strategy has two downsides:</p>
+<ul>
+<li>If <strong>any single replica fails, we&apos;re under a partial failure</strong> scenario: some replicas may have the new data while others may not, so the system is left in an <strong>inconsistent state</strong>. The client needs to retry the operation to restore consistency.</li>
+<li>The <em>latency</em> (the time since the client sends a request until it receives a response) of the whole operation is bounded by the <strong>latency of the slowest</strong> of the replicas.</li>
+</ul>
+<p>Note that this is equivalent to the <a href="../001-programming-a-backend/03-the-backends-backends.html#the-let-it-crash-approach-idempotency--retry-all">let-it-crash strategy</a> we&apos;ve seen before for partial failures.</p>
+<h3 id="asynchronous-replication">Asynchronous replication</h3>
+<p>Under asynchronous replication, we acknowledge a save after we&apos;ve persistently stored it in our primary database&apos;s disk, but we <strong>don&apos;t wait for saves to replicas to complete</strong>.</p>
+<p>This allows us to <strong>respond quickly</strong> to a write request, but then we <strong>have no guarantee</strong> about <strong>whether or when the replicas</strong> will process the write.</p>
+<h4 id="replication-lag">Replication lag</h4>
+<p>As we&apos;ll study in detail in future chapters, responding quickly by doing part of the work asynchronously doesn&apos;t magically make the work free. We basically trade off <strong>reduced latency</strong> by <strong>increased memory</strong> consumption and/or <strong>lost data</strong>.</p>
+<p>In this case, since a write is acknowledged by the primary until it is processes by all async replicas, we need to store the fact that it happened somewhere, so that the replicas can consume the event from there. This somewhere is called the <em>replication log</em>.</p>
+<p>The amount of time between a write enters this log and it is consumed by the slowest replica is called <em>replication lag</em>.</p>
+<p>If one or more replicas become slow for some reason, or if they can&apos;t keep up with the pace of writes to the database, the replication lag will increase and the replication log will grow indefinitely, until it is too big to fit in wherever it is kept.</p>
+<p>At that point, we can either <strong>start dropping data</strong> from it or <strong>stop accepting new writes</strong>.</p>
+<h2 id="reading-from-replicas">Reading from replicas</h2>
+<p>So far, replicas have been just sitting there, keeping themselves up to date and waiting for a failover to being <em>promoted</em> to primary and have a chance to do something useful. But what if we put them to use before that?</p>
+<p>We&apos;ve seen two ways replicas may not be up-to-date with the leader:</p>
+<ul>
+<li>Under asynchronous replication, the replication lag may not be zero.</li>
+<li>Under synchronous replication, a write may have failed, leaving some replicas outdated.</li>
+</ul>
+<p>If we can afford reading data that is <strong>not completely up-to-date</strong>, we can <strong>use replicas to perform reads</strong>.</p>
+<p>This reduces reads-per-second in our primary database.</p>
+<h2 id="leaderless-databases">Leaderless databases</h2>
+<p>OK, so what if we don&apos;t just allow reads from replicas, but <strong>also writes</strong>?</p>
+<p>Well, to begin with, they <strong>stop being replicas</strong>. They&apos;re no longer storing replicated data that is also stored somewhere else, but, for a while at least, they hold data that no other machine holds.</p>
+<p>When more than one machine accept writes, we no longer have leaders: we have a <em>leaderless database</em>.</p>
+<p>In this scenario, typically all machines that accept writes act as replicas to all other machines that accept writes. (There might be additional read-only replicas.)</p>
+<p>Why would we want to do this?</p>
+<ul>
+<li><strong>Failover is trivial</strong>: just retry the write in another machine.</li>
+<li>We can <strong>scale by adding more machines</strong>: each machine will receive only a portion of the requests.</li>
+</ul>
+<h3 id="quorum">Quorum</h3>
+<p>Being leaderless is independent of the replication strategy used, but it opens the door to a <strong>middle ground</strong> between <strong>synchronous and asynchronous</strong> replication: write synchronously to, and read synchronously from, only a <strong>majority</strong> of the machines, instead of all of them. This is called <strong>quorum consistency</strong>.</p>
+<p>They key is that, if you write to a majority of machines, then a read to a majority of machines will necessarily overlap at least in one machine with the newest write. The read can then select the newest version of the retrieved data.</p>
+<p>This greatly reduces the chances of inconsistency, at the expense of making writes and reads more expensive, as they need to go to more machines.</p>
+<p>Note that <strong>inconsistency may still occur</strong>: some machines that acknowledged the write can then die, and then the new majority may not include any machine with that write. Also, the <strong>partial failure</strong> scenario of synchronous replication can still occur here.</p>
+<h3 id="dealing-with-conflicts">Dealing with conflicts</h3>
+<p>Accepting writes in more than one machine at the same time means they <strong>can contradict each other</strong>. What happens if one machine accepts <code>foo=42</code> while <strong>concurrently</strong> another machine accepts <code>foo=13</code>? Eventually, all machines in the system will be presented with both writes. What should they do?</p>
+<h4 id="last-write-wins">Last write wins</h4>
+<p>The easiest approach is to not deal with the conflict at all: make some <strong>choice</strong> between two conflicting writes and discard the other. This choice is made in all machines in the system, and needs to be <strong>deterministic</strong> so that the system keeps being <em>eventually consistent</em>, ie. machines don&apos;t contradict each other in the long run.</p>
+<p>The usual way to choose one write over the other is that writes are tagged with the time they were first processed. Then, each node just chooses the write that seems to have happened <strong>more recently</strong>.</p>
+<p>Note that, as clocks aren&apos;t perfectly synchronized between machines, this may not actually be the case; but, even if it was, we could very easily be losing writes.</p>
+<p>Consider a counter that starts at zero. If the system receives <code>T1: counter=1</code> (<code>T1</code>, <code>T2</code>, etc., being the time tag), then some client reads this and increases the counter by writing <code>T2: counter=2</code>, then all is fine. But if the system receives <code>T1: counter=1</code>, and concurrently some client reads the counter and sees <code>counter=0</code>, and then attempts to increase the counter by writing <code>T2: counter=1</code>, then the final state that will eventually be chosen by all machines is <code>T2: counter=1</code>. We have lost an increase.</p>
+<h4 id="read-repair">Read repair</h4>
+<p>Another technique is that, on noticing conflicting writes, store both, and let clients that read the data later perform a <em>read repair</em> by clarifying which final value should be kept, following whatever logic they choose.</p>
+<p>But how can we detect conflicting writes?</p>
+<p>In the example above, if a client sends <code>T1: counter=1</code> and another client sends <code>T2: counter=1</code>, we know that there&apos;s a conflict: we have two increases, but the second client didn&apos;t take into account the first, concurrent increase. However, if we see <code>T1: counter=1</code> and <code>T2: counter=2</code>, then there&apos;s no conflict: the final value of the counter coincides with the amount of increases performed, so the second client must have seen the <code>T1: counter=1</code>, and derived <code>T2: counter=2</code> from it.</p>
+<p>The trick is to tag each write with the version they&apos;re based on. There are several ways of doing this with different properties, but they broadly called <em>logical clocks</em>. See <a href="https://queue.acm.org/detail.cfm?id=2917756" target="_blank">Why Logical Clocks are Easy</a> if you&apos;re interested in details.</p>
+<p>In the example above, in the conflicting scenario, the database would store both <code>T1: counter=1</code> and <code>T2: counter=1</code>. When a client then reads the counter, it will be presented with both values. It can then merge them with a logic that makes sense; in this case, it can add their values to get a total count of <code>T3: counter=2</code>. This will be sent back to the database, which can then discard the conflicting values and store the merged value instead.</p>
+<h4 id="crdts">CRDTs</h4>
+<p>CRDT stands for Conflict-free Replicated Data Type. Those are types on which all operations are:</p>
+<ul>
+<li>Commutative.</li>
+<li>Associative.</li>
+<li>Idempotent.</li>
+</ul>
+<p>This means that processing any number of writes to the same CRDT yields the same result, no matter in which order they&apos;re applied, or even how many times each of them is performed.</p>
+<p>A set to which you can only add items is a trivial example of a CRDT. But there are others, for many useful scenarios.</p>
+<p>CRDTs have the additional nice property of being <em>idempotent</em>, which is a property that many databases just sweep under the rug but that we&apos;ve seen how important it is.</p>
+<h4 id="linearizability-consistent-first-robustness">Linearizability: consistent-first robustness</h4>
+<p>There are leaderless systems that act as if they were a single machine with at all times, even if some machines fail.</p>
+<p>This property of a whole distributed system acting as a single machine that processes operations one after another and keeps the data consistent between one operation and the next is called <em>linearizability</em>.</p>
+<p>In practice, this is achieved with databases that achieve <em>consensus</em>. <a href="https://zookeeper.apache.org/" target="_blank">ZooKeeper</a>, <a href="https://coreos.com/etcd/" target="_blank">etcd</a> and <a href="https://www.consul.io/" target="_blank">Consul</a> are examples of such databases.</p>
+<p>The downside is that such systems are usually very slow, and can&apos;t process that many writes per second. But for data that is small, changes not that frequently and is critical to keep fully consistent, linearizability is usually worth it.</p>
+<p>This is an active area of research, however, and recently more databases are appearing with this or slightly lower consistency guarantees while still being distributed, fault-tolerant, and fast. Look into <a href="https://cloud.google.com/spanner/" target="_blank">Spanner</a>, <a href="https://www.foundationdb.org/" target="_blank">FoundationDB</a> and <a href="https://www.cockroachlabs.com/" target="_blank">CockroachDB</a> as examples of such databases.</p>
+<h2 id="durability-vs-latency">Durability vs. latency</h2>
+<p>The ability to not lose data once you&apos;ve acknowledged as written is called <em>durability</em>.</p>
+<p>Roughly speaking, techniques that <strong>increase durability also increase latency</strong>. Making data durable means saving it deeper, in more reliable places, that will survive a reboot or even a whole disk failure.</p>
+<p>There are systems that <strong>optimize for latency</strong> rather than durability. That&apos;s what caches usually do, for example: since the data they store is also stored (durably) somewhere else, or it can be recomputed, or we can afford to just lose it, they don&apos;t bother storing it in disk: they keep it <strong>in memory</strong>, which is way faster to access than the disk.</p>
+<h2 id="partitioning">Partitioning</h2>
+<p>As you can imagine, storing data gets hard as a system gets more users. You get:</p>
+<ul>
+<li>More requests per second.</li>
+<li>More volume of data: queries need to search more data to get a result.</li>
+<li>Data may no longer fit in a single disk.</li>
+<li>Replicas may no longer be able to keep up with the pace of writes.</li>
+</ul>
+<p>Sooner or later, you will have to not just store the same data in several places (replication), but also put different data in different places (partitioning).</p>
+<p>This reduces the load in each partition, effectively <strong>eliminating bottlenecks</strong> and <strong>single points of failure</strong>. It is key to achieve a scalable system.</p>
+<h3 id="partitioning-by-keeping-separate-databases">Partitioning by keeping separate databases</h3>
+<p>This is the easiest way to partition your data: just keep separate, completely independent databases.</p>
+<p>The downside is that you can&apos;t make queries that search all your data.</p>
+<h3 id="partitioning-a-single-database">Partitioning a single database</h3>
+<p>You can also partition a single database, so that you&apos;re able to query the whole database. This usually is handled by the database system you&apos;re using.</p>
+<h4 id="indexing-a-partitioned-database">Indexing a partitioned database</h4>
+<p>Often, we want to query data not by its primary key (IDs), but by other fields (name, some date, etc.).</p>
+<p>We do this efficiently by declaring an index. An index makes queries efficient roughly by making an ordered list of data; then, a query doesn&apos;t need to search all documents/rows/objects, just those within the limits of what we&apos;re querying.</p>
+<p>Keeping an index in sync with the data is easy in a single partition, but things get more involved in a partitioned database. There are two main approaches.</p>
+<h5 id="partitioned-index">Partitioned index</h5>
+<p>The index, ie. the list, lives <strong>in its own machine</strong>. Each time a write occurs, an <strong>additional write</strong> needs to be performed to <strong>each of the affected indexes&apos;s machines</strong> to keep it updated.</p>
+<p>Slow writes, fast reads, as a query by an indexed field only needs to look up one machine.</p>
+<h5 id="scatter-gather">Scatter-gather</h5>
+<p>Keep partial indexes <strong>in the same partition</strong> in which the data lives.</p>
+<p>Fast writes, slow reads, as a query by an indexed field needs to go to all partitions for their partial indexes, then merge their results.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-contradictions.html" class="navigation navigation-prev " aria-label="Previous page: Contradictions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03-doing-things-later.html" class="navigation navigation-next " aria-label="Next page: Doing things later">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Persistent state","level":"1.3.2","depth":2,"next":{"title":"Doing things later","level":"1.3.3","depth":2,"path":"002-distributed-data/03-doing-things-later.md","ref":"002-distributed-data/03-doing-things-later.md","articles":[]},"previous":{"title":"Contradictions","level":"1.3.1","depth":2,"path":"002-distributed-data/01-contradictions.md","ref":"002-distributed-data/01-contradictions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"002-distributed-data/02-persistent-state.md","mtime":"2022-04-29T07:27:32.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,659 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>The backend's backends · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../002-distributed-data/" />
+    
+    
+    <link rel="prev" href="02-serving-an-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Programming a backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01-more-than-one-computer.html">
+            
+                <a href="01-more-than-one-computer.html">
+            
+                    
+                    More than one computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="02-serving-an-api.html">
+            
+                <a href="02-serving-an-api.html">
+            
+                    
+                    Serving an API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="03-the-backends-backends.html">
+            
+                <a href="03-the-backends-backends.html">
+            
+                    
+                    The backend's backends
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../002-distributed-data/">
+            
+                <a href="../002-distributed-data/">
+            
+                    
+                    Distributed data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../002-distributed-data/01-contradictions.html">
+            
+                <a href="../002-distributed-data/01-contradictions.html">
+            
+                    
+                    Contradictions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../002-distributed-data/02-persistent-state.html">
+            
+                <a href="../002-distributed-data/02-persistent-state.html">
+            
+                    
+                    Persistent state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../002-distributed-data/03-doing-things-later.html">
+            
+                <a href="../002-distributed-data/03-doing-things-later.html">
+            
+                    
+                    Doing things later
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                <a href="../002-distributed-data/04-operation-oriented-databases.html">
+            
+                    
+                    Operation-oriented databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../003-backends-in-the-wild/">
+            
+                <a href="../003-backends-in-the-wild/">
+            
+                    
+                    Backends in the wild
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                <a href="../003-backends-in-the-wild/01-computers-disappear.html">
+            
+                    
+                    Computers disappear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../003-backends-in-the-wild/02-deploying.html">
+            
+                <a href="../003-backends-in-the-wild/02-deploying.html">
+            
+                    
+                    Deploying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                <a href="../003-backends-in-the-wild/03-memory-isnt-infinite.html">
+            
+                    
+                    Memory isn't infinite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../003-backends-in-the-wild/06-observability.html">
+            
+                <a href="../003-backends-in-the-wild/06-observability.html">
+            
+                    
+                    Observability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../101-appendix-containers/">
+            
+                <a href="../101-appendix-containers/">
+            
+                    
+                    Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../102-appendix-good-practices/">
+            
+                <a href="../102-appendix-good-practices/">
+            
+                    
+                    Good Practices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../102-appendix-good-practices/01-general-practices.html">
+            
+                <a href="../102-appendix-good-practices/01-general-practices.html">
+            
+                    
+                    General Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../102-appendix-good-practices/02-design-practices.html">
+            
+                <a href="../102-appendix-good-practices/02-design-practices.html">
+            
+                    
+                    Design Good Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                <a href="../102-appendix-good-practices/99-polymorphism-and-abstract-types.html">
+            
+                    
+                    Polymorphism and Abstract Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >The backend's backends</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="the-backends-backends">The backend&apos;s backends</h1>
+<h2 id="failures-dont-end-with-communication">Failures don&apos;t end with communication</h2>
+<p>The picture we&apos;ve painted so far may look like this: to accomplish some task, computers talk to one another through a <strong>dark, misty, treacherous Ocean of Uncertainty</strong> in which messages get lost, sink, or are left adrift indefinitely; but, once a lucky message makes it to the other side of this ocean, all trouble is then behind, <strong>the recipient does its part of the task with full reliability</strong>, and only when it&apos;s time to send another message back with a response does the possibility of failure come back again.</p>
+<p>If only things were so easy! The truth is, this picture is <strong>missing two extra sources of failures</strong>:</p>
+<ul>
+<li>The recipient <strong>may crash</strong> at any point <strong>while processing a message</strong>.</li>
+<li>The recipient&apos;s part of the task may involve <strong>communicating with one or more extra computers</strong>, so:<ul>
+<li>As we know, <strong>those communications can fail</strong>.</li>
+<li>Those computers <strong>can also crash</strong>.</li>
+<li>Those computers may, in turn, communicate with even more computers.</li>
+</ul>
+</li>
+</ul>
+<p>But this should not lead us to pessimism. In fact, distributed systems can be made <strong>more reliable than any system running in a single computer</strong> can dream of. When you&apos;re done with this course, you will have a pretty complete overview of the main techniques to achieve that reliability. You will have attained the ability to create <strong>programs with superpowers</strong> that outlive any fallible machine that runs them and overcome however many obstacles are put in their way.</p>
+<p>So, with that in mind, let&apos;s see what we can do about failure in the backend, and in the backend&apos;s backends.</p>
+<h2 id="let-it-crash">Let it crash</h2>
+<h3 id="server-side-recovery">Server-side recovery</h3>
+<p>A common way of thinking when attempting to build robustness into a backend is to <strong>recover</strong> as much as possible from errors in the backend itself: catch all exceptions, think hard about all possible combinations of failed states and come up with ways to reach a more desirable state from those.</p>
+<h3 id="crashes-will-happen-anyway">Crashes will happen, anyway</h3>
+<p>Here&apos;s the thing: there&apos;s always the possibility of <em>crashes</em>. A machine can <strong>just die</strong>, for all sorts of reasons. At any point of a backend&apos;s execution. If you want your distributed program to actually be reliable, it needs to recover from that scenario. Since backends can die, it follows that <strong>you can&apos;t rely on the backend to recover from its own failures</strong>: it might be too dead to do anything useful. The sophisticated damage control mechanisms you have put in place won&apos;t even have a chance to make things right if the program that runs them just halts.</p>
+<p>Given this fact of life, you can actually take advantage of it to make your system simpler. Given the other components of the system already have to consider the possibility of your death, whenever you find yourself in a not-so-ideal state, <strong>just crash!</strong></p>
+<h3 id="crashing-gently">Crashing gently</h3>
+<p>It&apos;s worth clarifying what we mean by <em>crash</em> here, as something that your program <em>does</em> as opposed to something that <em>happens</em> to it. It basically means to act <em>as if</em> the computer was suddenly turned off, that is, stop operations immediately. With some caveats:</p>
+<ul>
+<li><strong>Limit the crash to the context</strong> in which the error happened. If you&apos;re handling a request, just abort the request handler, not the whole program!</li>
+<li>If someone is waiting for a response from you, <strong>try to actively inform</strong> them of the crash as soon as possible. You should send a suitable error response, and/or abruptly close the TCP connection, if applies. This allows the other side to recover as soon as possible from your failure.</li>
+<li><strong>Report as much debug information</strong> as it might be useful. We&apos;ll see how in further chapters.</li>
+</ul>
+<p>This technique is called <em>let it crash</em>: crashing is nothing to be worried about if <em>someone else, somewhere else</em> is expecting it to happen, so... just let it crash!</p>
+<p>As with any other general technique in programming, this one <strong>isn&apos;t to be applied blindly</strong> at every occasion. Sometimes, it can be <strong>justified</strong> to have some degree of <strong>recovery</strong> in the backend itself. Handling crashes usually involves some amount of <em>service degradation</em>, and recovering from errors in the backend can reduce it, at the cost of a more complex system with more possible states to consider. Use your judgement to decide if this complexity is justified or not. Just know that it&apos;s <em>optional</em>, and it shouldn&apos;t affect system-wide robustness if the system is designed right.</p>
+<h3 id="crashes-are-indistinguishable-from-failed-communications">Crashes are indistinguishable from failed communications</h3>
+<p>We&apos;ve put a lot of faith in <em>someone else, somewhere else</em> to recover from our crashes. That <em>someone, somewhere</em> can just be the computer that is waiting for your response. And, turns out, we&apos;ve already seen what to do to recover from crashes on the server, from the client&apos;s perspective.</p>
+<p>The key insight here is that <strong>a crash and a failed communication look the same</strong> to the client. You wanted a response, be it some result value or just some kind of acknowledgment that the message is processed successfully, and you didn&apos;t get it in time. The only difference is that, for efficiency (to reduce waits) and debuggability purposes, you may have received an error response (in the 5xx range, if you&apos;re speaking HTTP), a connection broken event, or some other kind of failure signal instead of a timeout.</p>
+<p>So you do exactly <strong>the same as you would do on a timeout</strong>. This reduces the complexity of your distributed recovery mechanism significantly by having a unified strategy that works in all scenarios.</p>
+<h2 id="partial-failures">Partial failures</h2>
+<p>A backend usually acts as a <strong>coordinator for other backends</strong>. Sometimes, this involves causing <strong>several effects</strong> that are <strong>independent of each other</strong>. For example, you might want to send an email and then (or in parallel) save something in a database.</p>
+<p>Given that those effects are the result of messages sent in a distributed system, they can fail, as any other distributed operation. And, given they&apos;re independent from each other, they can <strong>fail independently</strong>.</p>
+<p>If some operations succeeded while others failed or weren&apos;t even attempted, then we have <strong>partial failure</strong>.</p>
+<p>Partial failure is usually trickier to handle than total failure. You typically want either <strong>all</strong> effects or <strong>none</strong> of them to take place. On partial failure, the robust thing to do is to try to move the system towards one of those two states, so that things aren&apos;t left half-done.</p>
+<h3 id="the-recovery-approach-undo-or-retry">The recovery approach: undo or retry</h3>
+<p>Let&apos;s consider two choices:</p>
+<ul>
+<li>Undo the operations that succeeded. This moves the system towards the <em>total failure</em> state.</li>
+<li>Retry the operations that failed. This moves the system towards the <em>total success</em> state.</li>
+</ul>
+<p>But there are problems with those strategies:</p>
+<ul>
+<li>Undoing may not be possible at all. For example, you can&apos;t unsend an email.</li>
+<li>Retrying may trigger duplicate effects, if the original attempt yielded just a <em>communication</em> failure which didn&apos;t correspond to an <em>operational</em> failure: the operation arrived but its acknowledgement got lost, or it will arrive eventually.</li>
+<li>Undoing and retrying are distributed operations themselves, and thus can also fail. So we keep retrying them too? For how long?</li>
+<li>If the program crashes, the pending undo or retry operations will never happen, unless they&apos;re preventively put in a <em>job queue</em> before and then canceled somehow. (We&apos;ll see more about queues in time.)</li>
+</ul>
+<p>Both are quite complicated solutions that fall into <em>server-side recovery</em> strategy. How can we fit partial failures in a <em>let it crash</em> strategy?</p>
+<h3 id="the-let-it-crash-approach-idempotency--retry-all">The <em>let it crash</em> approach: idempotency + retry all</h3>
+<p>Actually, we already know what to do. We know from the first chapter than, in order to be robust, a distributed operation <a href="01-more-than-one-computer.html#continued-retries--idempotency--guaranteed-eventual-success">needs to be <em>idempotent</em></a>, so that it can be retried as many times as necessary to get confirmation that it succeed.</p>
+<p>This means that we should be <em>already</em> planning for the possibility that the current operation (that is, the one processed by your backend, which coordinates the independent sub-operations that we&apos;re discussing) is retried by the client, even if there&apos;s no failure at all in the backend. This means that the operation needs to be made <em>idempotent</em>.</p>
+<p>We can take advantage of this when partial failure occurs. We just follow <em>let it crash</em>: we just treat partial failure as total failure and crash the request handling.</p>
+<p>This is supposed to trigger a retry from the client. The retry will, in turn, cause the backend to retry its sub-operations, <em>even those that had succeeded</em> before, if there were any.</p>
+<p>This retry may fail too, either partially or fully, but that would in turn trigger another retry.</p>
+<p>Since those sub-operations are also <em>idempotent</em>, it doesn&apos;t matter if they were previously successful or not. If they were successful, then retrying will have no effect. If they had failed in a previous attempt, then maybe this time they will succeed.</p>
+<p><strong>Eventually</strong>, after enough retries, <strong>all sub-operations</strong> will have <strong>succeeded</strong>.</p>
+<h3 id="the-end-to-end-robustness-of-idempotency--retries">The end-to-end robustness of idempotency + retries</h3>
+<p>If, at this point, you&apos;re still not convinced that idempotency combined with continued retries from the client is <em>the</em> way to go, let us recall what it has bought us so far:</p>
+<ul>
+<li>It recovers from messages that get lost, arbitrarily delayed, or duplicated in an unreliable medium.</li>
+<li>It recovers from crashes in the server.</li>
+<li>It recovers from partial failures in the server, by eventually achieving total success of all sub-operations.</li>
+</ul>
+<p>This works no matter how many levels of client-server relationships we&apos;re on. Consider a tree of operations like this:</p>
+<div class="mermaid">
+graph LR
+  frontend --&gt; backend
+  backend --&gt; database
+  backend --&gt; cache
+  backend --&gt; microservice
+  microservice --&gt; dbcreate[database create]
+  microservice --&gt; mailer
+  microservice --&gt; dbsave[database save]
+</div>
+
+<p>Say that a request from <code>frontend</code> to <code>backend</code> results in requests to all those systems, as part of the backend&apos;s operation. Consider what happens if <code>mailer</code> fails:</p>
+<div class="mermaid">
+sequenceDiagram
+  participant frontend
+  participant backend
+  participant database
+  participant cache
+  participant microservice
+  participant mailerdb as database
+  participant mailer
+
+  frontend -&gt;&gt; backend: do op 1
+  backend -&gt;&gt; database: set foo=42 from op 1
+  database -&gt;&gt; backend: OK, stored
+  backend -&gt;&gt; cache: set foo=42 from op 1
+  cache -&gt;&gt; backend: OK, stored
+  backend -&gt;&gt; microservice: send email from op 1
+  microservice -&gt;&gt; mailerdb: create new email from op 1
+  mailerdb -&gt;&gt; microservice: OK, created
+  microservice -&gt;&gt; mailer: send a mail from op 1
+  mailer -&gt;&gt; microservice: &#x1F6A8; crash! &#x1F6A8;
+  microservice -&gt;&gt; backend: &#x1F6A8; crash! &#x1F6A8;
+  backend -&gt;&gt; frontend: &#x1F6A8; crash! &#x1F6A8;
+
+  Note left of frontend: Well, let&apos;s retry
+
+  frontend -&gt;&gt; backend: do op 1
+  backend -&gt;&gt; database: set foo=42 from op 1
+  database -&gt;&gt; backend: already did!
+  backend -&gt;&gt; cache: set foo=42 from op 1
+  cache -&gt;&gt; backend: already did!
+  backend -&gt;&gt; microservice: send email from op 1
+  microservice -&gt;&gt; mailerdb: create new email from op 1
+  mailerdb -&gt;&gt; microservice: already did!
+  microservice -&gt;&gt; mailer: send a mail from op 1
+  mailer -&gt;&gt; microservice: OK, sent
+  microservice -&gt;&gt; mailerdb: mark email as sent from op 1
+  mailerdb -&gt;&gt; microservice: OK, done
+  microservice -&gt;&gt; backend: OK, done
+  backend -&gt;&gt; frontend: OK, done
+</div>
+
+<h3 id="can-we-trust-clients-to-retry">Can we trust clients to retry?</h3>
+<p>The problem with this approach to fixing partial failures it that usually you <em>need</em> the client to retry. If it doesn&apos;t, then your system might be stuck in an intermediate state.</p>
+<p>If the client is a frontend, e. g. a browser or a mobile phone, you need an intermediate that reliably retries on failure if you really care about reaching a consistent state, because state in user devices is not <em>durable</em>.</p>
+<p>You can also just have a garbage collector.</p>
+<!-- TODO: expand -->
+<h2 id="canceling-work">Canceling work</h2>
+<p>The client could attempt to notify the server if they stop being interested in an operation. The server should then propagate this notification to their backends and crash the request handler. This prevents unnecessary work.</p>
+<p>A robust way of doing so is by breaking the connection. This is what happens if the user closes the browser tab, for example, so you can take advantage of that.</p>
+<p>Beware of inconsistent state, though. A broken connection means the client won&apos;t retry anymore, so consider that, as above.</p>
+<!-- TODO: expand -->
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-serving-an-api.html" class="navigation navigation-prev " aria-label="Previous page: Serving an API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../002-distributed-data/" class="navigation navigation-next " aria-label="Next page: Distributed data">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"The backend's backends","level":"1.2.3","depth":2,"next":{"title":"Distributed data","level":"1.3","depth":1,"path":"002-distributed-data/README.md","ref":"002-distributed-data/README.md","articles":[{"title":"Contradictions","level":"1.3.1","depth":2,"path":"002-distributed-data/01-contradictions.md","ref":"002-distributed-data/01-contradictions.md","articles":[]},{"title":"Persistent state","level":"1.3.2","depth":2,"path":"002-distributed-data/02-persistent-state.md","ref":"002-distributed-data/02-persistent-state.md","articles":[]},{"title":"Doing things later","level":"1.3.3","depth":2,"path":"002-distributed-data/03-doing-things-later.md","ref":"002-distributed-data/03-doing-things-later.md","articles":[]},{"title":"Operation-oriented databases","level":"1.3.4","depth":2,"path":"002-distributed-data/04-operation-oriented-databases.md","ref":"002-distributed-data/04-operation-oriented-databases.md","articles":[]}]},"previous":{"title":"Serving an API","level":"1.2.2","depth":2,"path":"001-programming-a-backend/02-serving-an-api.md","ref":"001-programming-a-backend/02-serving-an-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchorjs","mermaid-gb3","livereload"],"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"001-programming-a-backend/03-the-backends-backends.md","mtime":"2022-04-29T07:27:32.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T09:07:35.508Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
